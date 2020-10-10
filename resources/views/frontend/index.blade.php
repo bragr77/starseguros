@@ -17,10 +17,10 @@
 
 
     <!-- Estilos pagina -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/easy-responsive-tabs.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/flexslider.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilo.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/easy-responsive-tabs.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/flexslider.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/owl.carousel.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/estilo.css') }}"/>
 
 </head>
 
@@ -57,7 +57,7 @@
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <a href="{{ route('index') }}">Inicio</a>
                         </li>
                         <li>
                             <a href="#productos">Productos</a>
@@ -559,10 +559,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-        <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
-        <script src="{{ asset('js/easyResponsiveTabs.js') }}"></script>
-        <script src="{{ asset('js/owl.carousel.js') }}"></script>
-        <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="{{ asset('frontend/js/jquery.flexslider-min.js') }}"></script>
+        <script src="{{ asset('frontend/js/easyResponsiveTabs.js') }}"></script>
+        <script src="{{ asset('frontend/js/owl.carousel.js') }}"></script>
+        <script src="{{ asset('frontend/js/custom.js') }}"></script>
 
 </body>
 
