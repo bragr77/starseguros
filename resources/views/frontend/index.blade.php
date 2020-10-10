@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Stars Seguros</title>
-    <link rel="shortcut icon" href="{{ asset('img/favicon2.png') }}"/>
+
+    <link rel="icon" type="image/png" href="{{  asset('img/favicon.png') }}"/>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
