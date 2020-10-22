@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('frontend.index');
 })->name('index');
 
+Route::get('/english', function () {
+    return view('frontend.english');
+})->name('english');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

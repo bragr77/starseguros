@@ -8,8 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Stars Seguros</title>
-
-    <link rel="icon" type="image/png" href="{{  asset('img/favicon.png') }}"/>
+    <link rel="shortcut icon" href="img/favicon2.png" />
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -22,7 +21,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/flexslider.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/owl.carousel.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/estilo.css') }}"/>
-
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
@@ -50,30 +48,33 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="{{ route('index') }}">
+                    <a class="navbar-brand" href="{{ route('english') }}">
                         Stars<span>Seguros</span>
                     </a>
-                    <p>Llámanos ahora<b>+1 (475) 266-1141</b></p>
+                    <p>Call us now<b>+1 (475) 266-1141</b></p>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="{{ route('index') }}">Inicio</a>
+                            <a href="english.html">Home</a>
                         </li>
                         <li>
-                            <a href="#productos">Productos</a>
+                            <a href="#productos">Products</a>
                         </li>
                         <li>
-                            <a href="#servicios">Servicios</a>
+                            <a href="#servicios">Services</a>
                         </li>
                         <li>
-                            <a href="#contacto">Contactécnos</a>
+                            <a href="#contacto">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#" class="text-center btn-default">Inscribirse</a>
+                            <a href="#" class="text-center btn-default">Register</a>
                         </li>
                         <li>
-                            <a href="{{ route('english') }}">English</a>
+                            &nbsp &nbsp &nbsp
+                        </li>
+                        <li>
+                            <a href="{{ route('index') }}">Spanish</a>
                         </li>
                     </ul>
                 </div>
@@ -88,9 +89,9 @@
                     <img src="img/slider1.jpg" />
                     <div class="slide-info">
                         <div class="slide-con">
-                            <b>Cuida tu Salud</b>
-                            <h3>Seguros de Salud</h3>
-                            <p>StarsSeguros. Pone a su disposición opciones de seguros de salud, al alcance de su bolsillo, a través del OBAMACARE.</p>
+                            <b>Watch your health</b>
+                            <h3>Health Insurance</h3>
+                            <p>StarsSeguros. It makes health insurance options available to you, at your fingertips, through OBAMACARE.</p>
                         </div>
                     </div>
                 </li>
@@ -98,9 +99,9 @@
                     <img src="img/slider2.jpg" />
                     <div class="slide-info">
                         <div class="slide-con">
-                            <b>Cuida a los tuyos</b>
-                            <h3>Seguros Complementarios</h3>
-                            <p>En StarsSeguros. Ayudamos a personas, familias y empleadores a estar preparados con nuestras pólizas complementarias de salud</p>
+                            <b>Take care of yours</b>
+                            <h3>Complementary Insurance</h3>
+                            <p>n StarsSeguros. We help individuals, families and employers to be prepared with our complementary health policies.</p>
                         </div>
                     </div>
                 </li>
@@ -108,9 +109,9 @@
                     <img src="img/slider3.jpg" />
                     <div class="slide-info">
                         <div class="slide-con">
-                            <b>Proteje tu vida</b>
-                            <h3>Seguro de vida</h3>
-                            <p>En StarsSeguros, los llamamos seguros de inversión. asegura a tus familiares a partir de los 14 días de nacidos.</p>
+                            <b>Protect your life</b>
+                            <h3>Life insurance</h3>
+                            <p>At StarsSeguros, we call it investment insurance. insure your relatives from 14 days old.</p>
                         </div>
                     </div>
                 </li>
@@ -118,9 +119,9 @@
                     <img src="img/slider4.jpg" />
                     <div class="slide-info">
                         <div class="slide-con">
-                            <b>Años Dorados</b>
+                            <b>Golden Years</b>
                             <h3>Medicare Advantage</h3>
-                            <p>Si cumple 65 años o planea jubilarse después de los 65, StarsSeguros tiene planes que le ayudaran a ahorrar dinero.</p>
+                            <p> you turn 65 or plan to retire after 65, StarsSeguros has plans that will help you save money.</p>
                         </div>
                     </div>
                 </li>
@@ -128,7 +129,7 @@
                     <img src="img/slider5.jpg" />
                     <div class="slide-info">
                         <div class="slide-con ">
-                            <b>Nuestro Aliado</b>
+                            <b>Our ally</b>
                             <h3>PANAMERICANA</h3>
                             <h4>Family Medicine Center</h4>
                             <div class="text-center">
@@ -142,8 +143,8 @@
                     <img src="img/slider6.jpg" />
                     <div class="slide-info">
                         <div class="slide-con ">
-                            <b>Nuestro Aliado</b>
-                            <h3>ASEGURADORA</h3>
+                            <b>Our ally</b>
+                            <h3>INSURANCE CARRIER</h3>
                             <h4>COMBINED</h4>
                             <div class="text-center">
                                 <img src="img/combined.png" alt="" class="img-responsive center-block" style="height: 76px; width: 300px;">
@@ -165,13 +166,13 @@
                 </div>
                 <div class="col-sm-7 col-md-8 col-lg-8" style="padding-left: 40px;">
                     <div class="intro">
-                        <h2>Bienvenidos a StarsSeguros</h2>
+                        <h2>Welcome to StarsSeguros</h2>
                         <hr>
-                        <p class="text-justify">Nuestro principal compromiso es "hacerlo facil para usted". Entendemos lo confuso que puede ser el tema de los seguros, es por ello que en stars seguros manejamos cuales son las interrogantes a formular, para establecer cual es
-                            la poliza que se ajusta a la solución de sus necesidades.</p>
-                        <h4>Estamos aquí para ayudarlo</h4>
-                        <p class="text-justify">La crisis de salud que ha generado el coronavirus(COVID-19) impone desafios, que repercuten en todo el mundo y nuestras comunidades. es por ello que en stars seguros tomamos las medidas optimas para protejera nuestros empleados
-                            y a sus familias, mientras trabajan para mantener los estandares óptimos de servicio y soporte para nuestros clientes.</p>
+                        <p class="text-justify">Our main commitment is "to make it easy for you". We understand how confusing the insurance issue can be, that is why at stars Seguros we handle what are the questions to ask, to establish which is the policy that fits the solution
+                            of your needs.</p>
+                        <h4>We are here to help you</h4>
+                        <p class="text-justify">The health crisis that the coronavirus (COVID-19) has generated imposes challenges, which affect the whole world and our communities. That is why at stars Segura we take the optimal measures to protect our employees and their families,
+                            while they work to maintain optimal standards of service and support for our clients.</p>
                     </div>
                 </div>
             </div>
@@ -185,48 +186,47 @@
             <div class="container">
                 <div class="row">
                     <div id="parentVerticalTab">
-                        <h2>Productos</h2>
+                        <h2>Products</h2>
                         <ul class="resp-tabs-list hor_1 col-sm-3 col-md-3 col-lg-3">
-                            <li><i class="fa fa-medkit"></i> Seguros de Salud</li>
-                            <li><i class="fa fa-ambulance"></i> Seguros Complementarios</li>
-                            <li><i class="ti-heart-broken"></i> Seguros de Vida</li>
-                            <li><i class="fa fa-user-md"></i> Medicare Advantage</li>
+                            <li><i class="fa fa-medkit"></i>Health insurance</li>
+                            <li><i class="fa fa-ambulance"></i>Complementary Insurance</li>
+                            <li><i class="ti-heart-broken"></i>Life insurances</li>
+                            <li><i class="fa fa-user-md"></i>Medicare Advantage</li>
                         </ul>
                         <div class="col-sm-5 col-md-5 col-lg-5 resp-tabs-container hor_1">
                             <div>
                                 <div class="prod-tab-content">
                                     <h4>
-                                        <span class="prod-cion"><i class="fa fa-medkit"></i></span> Seguros de Salud
+                                        <span class="prod-cion"><i class="fa fa-medkit"></i></span> Health insurance
                                     </h4>
-                                    <p class="text-justify">StarsSeguros. Pone a su disposición opciones de seguros de salud, al alcance de su bolsillo, a través de la Ley de Protección al Paciente y Cuidado de Salud Asequible (ACA) , mejor conocido como OBAMACARE. Nuestros
-                                        planes están agrupados en Bronce, Plata y Oro, para que elija el que mejor se adapte a sus necesidades, sin importar cual sea su elección, usted contara con acceso a atención integral de alta calidad.</p>
+                                    <p class="text-justify">StarsSeguros. It makes health insurance options available to you, at your fingertips, through the Patient Protection and Affordable Care Act (ACA), better known as OBAMACARE. Our plans are grouped in Bronze, Silver
+                                        and Gold, so that you can choose the one that best suits your needs, no matter what your choice is, you will have access to high quality comprehensive care.</p>
                                     <br>
                                     <br>
-                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contactános</a>
+                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contact Us</a>
                                 </div>
                                 <img src="img/segurosalud.jpg" alt="" class="img-responsive" />
                             </div>
                             <div>
                                 <div class="prod-tab-content">
                                     <h4>
-                                        <span class="prod-cion"><i class="fa fa-ambulance"></i></span> Seguros Complementarios
+                                        <span class="prod-cion"><i class="fa fa-ambulance"></i></span> Complementary Insurance
                                     </h4>
-                                    <p class="text-justify">Un accidente o un problema de salud inesperado, puede desajustar nuestra economía, en StarsSeguros. Ayudamos a personas, familias y empleadores a estar preparados con nuestras pólizas complementarias de salud, puede
-                                        cubrir sus deducibles, copagos y hasta sus gastos Diarios, nuestros seguros cubren los gastos que su seguro primario no hace y es dinero que va directamente a su bolsillo. Tenemos coberturas complementarias para
-                                        cualquier enfermedad o accidente.</p>
-                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contactános</a>
+                                    <p class="text-justify">An accident or an unexpected health problem can upset our economy at StarsSeguros. We help people, families and employers to be prepared with our complementary health policies, you can cover your deductibles, copays
+                                        and even your daily expenses, our insurance covers the expenses that your primary insurance does not make and it is money that goes directly to your pocket. We have complementary coverage for any illness or accident.</p>
+                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contact Us</a>
                                 </div>
                                 <img src="img/segurocomple.jpg" alt="" class="img-responsive" />
                             </div>
                             <div>
                                 <div class="prod-tab-content">
                                     <h4>
-                                        <span class="prod-cion"><i class="ti-heart-broken"></i></span> Seguros de Vida
+                                        <span class="prod-cion"><i class="ti-heart-broken"></i></span> Life insurances
                                     </h4>
-                                    <p class="text-justify">En StarsSeguros, los llamamos seguros de inversión. asegura a tus familiares a partir de los 14 días de nacidos, El seguro a término proporciona un beneficio por fallecimiento durante un tiempo limitado y el permanente
-                                        proporciona un beneficio por muerte, beneficios en vida y el potencial de generar valor en efectivo de la póliza al que puede acceder mediante préstamos y retiros de la póliza que puedes usar para pagar lo que necesite,
-                                        ofrece la flexibilidad de aumentar o disminuir su beneficio y reducir u omitir el pago de primas.</p>
-                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contactános</a>
+                                    <p class="text-justify">At StarsSeguros, we call it investment insurance. insure your family members after 14 days of birth, Term insurance provides a death benefit for a limited time and permanent provides a death benefit, life benefits and
+                                        the potential to generate cash value of the policy when Accessed through policy loans and withdrawals that you can use to pay for whatever you need, it offers the flexibility to increase or decrease your benefit
+                                        and reduce or skip premium payments.</p>
+                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contact Us</a>
                                 </div>
                                 <img src="img/segurovida.jpg" alt="" class="img-responsive" />
                             </div>
@@ -235,11 +235,11 @@
                                     <h4>
                                         <span class="prod-cion "><i class="fa fa-user-md "></i></span> Medicare Advantage
                                     </h4>
-                                    <p>Si cumple 65 años o planea jubilarse después de los 65, StarsSeguros podemos recomendarles planes Medicare Advantage que pueden ahorrarle dinero. Ofrecemos una variedad de opciones de Medicare para protegerlo a usted
-                                        y a sus ahorros para la jubilación, con primas tan bajas como $ 0 en algunas áreas, cuidados dentales y visión, medicamentos recetados y muchos beneficios más.</p>
+                                    <p>If you turn 65 or plan to retire after 65, StarsSeguros can recommend Medicare Advantage plans that can save you money. We offer a variety of Medicare options to protect you and your retirement savings, with premiums
+                                        as low as $ 0 in some areas, dental and vision care, prescription drugs, and many more benefits.</p>
                                     <br>
                                     <br>
-                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contactános</a>
+                                    <a href="https://api.whatsapp.com/send?phone=+1475266-1141&text=¡Hola! Necesito Información" class="btn btn-success btn-lg fa fa-whatsapp" style=" color: #fff; " target="-blank "> Contact Us</a>
                                 </div>
                                 <img src="img/medicare.jpg" alt="" class="img-responsive" />
                             </div>
@@ -255,27 +255,28 @@
             <br>
         </div>
         <section class="services">
-            <h2 class="text-center">Servicios</h2>
+            <h2 class="text-center">Services</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 services-dtl text-center">
                         <span class="fa fa-calendar"></span>
-                        <h3 class="text-black">Atención 24x7</h3>
-                        <p>Lunes a Viernes: 7:00 am - 8:00 pm</p>
-                        <p>Resto del dia Atención Teléfonica</p>
+                        <h3 class="text-black">24x7 attention</h3>
+                        <p>Monday to Friday: 7:00 am - 8:00 pm</p>
+                        <p>Rest of the day, Saturdays and Sundays</p>
+                        <p>Telephone Attention</p>
                     </div>
                     <div class="col-sm-4 services-dtl text-center">
                         <span class="fa fa-file-text"></span>
-                        <h3>Reclamación</h3>
+                        <h3>Claim</h3>
                         <br>
                         <!-- <p><a href="#">Descargue aqui sus planillas</a></p> -->
-                        <a href="#" class="btn btn-primary">Descargue aquí sus planillas</a>
+                        <a href="#" class="btn btn-primary">Download your forms here</a>
                     </div>
                     <div class="col-sm-4 services-dtl text-center">
                         <span class="fa fa-briefcase"></span>
-                        <h3>Trabaja con nosotros</h3>
+                        <h3>Work with us</h3>
                         <br>
-                        <a href="#" class="btn btn-primary">Solicitar</a>
+                        <a href="#" class="btn btn-primary">Apply for</a>
                     </div>
                     <!-- <div class="col-sm-3 services-dtl">
                         <span class="fa fa-money"></span>
@@ -356,7 +357,7 @@
                     <div class="parner-slider-mn">
                         <div class="col-sm-3">
                             <h2>
-                                <b>Nuestros</b> Socios
+                                <b>Our</b> Partners
                             </h2>
                         </div>
                         <div class="col-sm-9">
@@ -455,7 +456,7 @@
                     <div class="col-md-5">
                         <div class="contact-info">
                             <div class="contact-dtl">
-                                <h3>Contacto</h3>
+                                <h3>Contact</h3>
                                 <div>
                                     <i class="icon ti-home"></i>
                                     <p>7600 W Tidwell Rd, Office 709, Houston TX 77040. United States</p>
@@ -473,16 +474,16 @@
                     </div>
                     <div class="col-md-7">
                         <div class="form-box">
-                            <h2>Envienos un Mensaje</h2>
+                            <h2>Send us a message</h2>
                             <form action="#" method="GET" class="form-content">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label for="nombre">Nombre y Apellido:</label>
-                                        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required />
+                                        <label for="nombre">Name and surname:</label>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Write your name" required />
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="telefono">Teléfono:</label>
-                                        <input type="text" id="telefono" name="telefono" placeholder="Escriba su nombre" required />
+                                        <label for="telefono">Phone:</label>
+                                        <input type="text" id="telefono" name="telefono" placeholder="Write your phone" required />
                                     </div>
                                 </div>
                                 <div>
@@ -490,11 +491,11 @@
                                     <input type="text" id="email" name="email" placeholder="Email" required/>
                                 </div>
                                 <div>
-                                    <label for="asunto">Asunto:</label>
-                                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required/>
+                                    <label for="asunto">Subject:</label>
+                                    <input type="text" id="asunto" name="asunto" placeholder="subject" required/>
                                 </div>
                                 <div>
-                                    <label for="mensaje">Mensaje:</label>
+                                    <label for="mensaje">Message:</label>
                                     <textarea rows="1" cols="1" id="mensaje" name="mensaje" minlength="3" required></textarea>
                                 </div>
                                 <div class="text-center">
@@ -532,7 +533,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2 text-center">
-                        <h2>Redes <span>Sociales</span></h2>
+                        <h2>Social <span>Media</span></h2>
                         <div class="row">
                             <div class="col-sm-12">
                                 <a href="#"><i class="fa fa-instagram fa-3x" style="color: #fff; margin: 10px;"></i></a>
@@ -551,7 +552,7 @@
                             Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> Todos los derechos reservados | Este sitio web fue creado Por: <a href="https://ragrtics.com.ve " target="_blank ">Raúl González</a>
+                            </script> All rights reserved | This website was created by: <a href="https://ragrtics.com.ve " target="_blank ">Raúl González</a>
                         </div>
 
                     </div>
@@ -567,7 +568,6 @@
         <script src="{{ asset('frontend/js/easyResponsiveTabs.js') }}"></script>
         <script src="{{ asset('frontend/js/owl.carousel.js') }}"></script>
         <script src="{{ asset('frontend/js/custom.js') }}"></script>
-
 </body>
 
 </html>
