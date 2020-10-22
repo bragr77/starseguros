@@ -23,4 +23,8 @@ Route::get('/english', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/prueba', function () {
+    return view('backend.layouts.app');
+})->name('prueba');
+
+Route::get('/panel', 'HomeController@index')->name('panel');
