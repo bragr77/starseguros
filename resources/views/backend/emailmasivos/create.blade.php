@@ -13,14 +13,14 @@
         <div class="row form-group ">
             <div class="col-md-12 mb-3 mb-md-0 ">
                 <label class="text-black " for="subject ">Asunto</label>
-                <input type="subject" name="asunto" id="subject " class="form-control " required>
+                <input type="subject" name="asunto" id="mensaje" class="form-control " required>
             </div>
         </div>
 
         <div class="row form-group ">
             <div class="col-md-12 ">
                 <label class="text-black " for="message ">Mensaje</label>
-                <textarea name="mensaje" id="message " cols="30 " rows="4" class="form-control " minlength="3" required></textarea >
+                <textarea name="mensaje" id="mensaje" cols="30 " rows="4" class="form-control " minlength="3" required></textarea >
             </div>
         </div>
 

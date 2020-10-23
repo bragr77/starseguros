@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cliente;
 use App\Mail\EmailsMasivos;
+use App\Mensajemasivo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -16,7 +17,17 @@ class EmailsmasivosController extends Controller
      */
     public function index()
     {
-        return view('backend.emailmasivos.index');
+
+        $cont = 1;
+
+        $mensajemasivos = Mensajemasivo::all();
+
+
+        return view('backend.emailmasivos.index', [
+            'mensajemasivos' => $mensajemasivos,
+            'cont' => $cont,
+        ]);
+
     }
 
     /**
@@ -37,6 +48,13 @@ class EmailsmasivosController extends Controller
      */
     public function store(Request $request)
     {
+
+        $mensajemasivo = new Mensajemasivo();
+
+        $mensajemasivo->asunto  = $request->input('asunto');
+        $mensajemasivo->mensaje = $request->input('mensaje');
+
+        $mensajemasivo->save();
 
         $clientes = Cliente::all();
 
