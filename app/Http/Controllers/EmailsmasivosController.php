@@ -79,7 +79,13 @@ class EmailsmasivosController extends Controller
      */
     public function show($id)
     {
-        //
+
+        $mensajemasivo = Mensajemasivo::find($id);
+
+        return view('backend.emailmasivos.show', [
+            'mensajemasivo' => $mensajemasivo,
+        ]);
+
     }
 
     /**

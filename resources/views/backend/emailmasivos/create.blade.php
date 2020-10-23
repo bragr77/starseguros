@@ -4,9 +4,9 @@
 <!-- Animated -->
 <div class="animated fadeIn">
 
-    <form action="{{ route('emails.store') }}" method="POST" class="p-5 bg-white ">
+    <h2 class="mb-5 font-weight-bold">Envíar correos masivos</h2>
 
-        <h2 class="mb-5 font-weight-bold">Envíar correos masivos</h2>
+    <form action="{{ route('emails.store') }}" method="POST" class="p-5 bg-white ">
 
         @csrf
 

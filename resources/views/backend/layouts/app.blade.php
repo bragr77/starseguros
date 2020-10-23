@@ -21,6 +21,8 @@
     <!-- Custom styles for this template-->
     <link href="{{  asset('backend/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+
 </head>
 
 <body id="page-top">
@@ -367,6 +369,8 @@
 
     <!-- Core plugin JavaScript-->
     <script src="{{  asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="{{  asset('backend/js/sb-admin-2.min.js') }}"></script>
@@ -377,6 +381,52 @@
     <!-- Page level custom scripts -->
     <script src="{{  asset('backend/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{  asset('backend/js/demo/chart-pie-demo.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#emailmasivos').DataTable({
+                language: {
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     'Mostrar <select>'+
+                                       '<option value="10">10</option>'+
+                                       '<option value="20">20</option>'+
+                                       '<option value="30">30</option>'+
+                                       '<option value="40">40</option>'+
+                                       '<option value="50">50</option>'+
+                                       '<option value="100">100</option>'+
+                                       '<option value="150">150</option>'+
+                                       '<option value="200">200</option>'+
+                                       '<option value="500">500</option>'+
+                                       '<option value="-1">Todos</option>'+
+                                       '</select> Registros',
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     "Último",
+                        "sNext":     "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    },
+                    "buttons": {
+                        "copy": "Copiar",
+                        "colvis": "Visibilidad"
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 
