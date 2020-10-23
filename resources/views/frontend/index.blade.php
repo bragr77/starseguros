@@ -35,10 +35,10 @@
                     </div>
                     <div class="col-sm-6 social">
                         <ul>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            {{--  <li><a href="#"><i class="fa fa-twitter"></i></a></li>  --}}
+                            {{--  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>  --}}
+                            <li><a href="https://www.instagram.com/josesanchezseguros2020/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100047240031956" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -535,10 +535,10 @@
                         <h2>Redes <span>Sociales</span></h2>
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="#"><i class="fa fa-instagram fa-3x" style="color: #fff; margin: 10px;"></i></a>
-                                <a href="#"><i class="fa fa-twitter-square fa-3x" style="color: #fff; margin: 10px;"></i></a>
-                                <a href="#"><i class="fa fa-facebook-square fa-3x" style="color: #fff; margin: 10px;"></i></a>
-                                <a href="#"><i class="fa fa-linkedin-square fa-3x" style="color: #fff; margin: 10px;"></i></a>
+                                <a href="https://www.instagram.com/josesanchezseguros2020/" target="_blank"><i class="fa fa-instagram fa-3x" style="color: #fff; margin: 10px;"></i></a>
+                                {{--  <a href="#"><i class="fa fa-twitter-square fa-3x" style="color: #fff; margin: 10px;"></i></a>  --}}
+                                <a href="https://www.facebook.com/profile.php?id=100047240031956" target="_blank"><i class="fa fa-facebook-square fa-3x" style="color: #fff; margin: 10px;"></i></a>
+                                {{--  <a href="#"><i class="fa fa-linkedin-square fa-3x" style="color: #fff; margin: 10px;"></i></a>  --}}
                             </div>
                         </div>
                     </div>
