@@ -23,8 +23,11 @@ Route::get('/english', function () {
 
 Auth::routes();
 
-Route::get('/prueba', function () {
-    return view('backend.layouts.app');
-})->name('prueba');
+/* agrupamos la ruta por grupo y usamos un mismo prefijo */
+Route::group(['prefix' => 'panel'], function () {
 
-Route::get('/panel', 'HomeController@index')->name('panel');
+    Route::get('/', 'HomeController@index')->name('panel');
+
+
+
+});
