@@ -28,6 +28,6 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::get('/', 'HomeController@index')->name('panel');
 
-
+    Route::resource('emails', 'EmailsmasivosController');
 
 });

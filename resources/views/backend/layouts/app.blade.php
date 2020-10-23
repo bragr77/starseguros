@@ -46,7 +46,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ route('panel') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Panel Adminsitartivo</span></a>
+                    <span>Panel Administrativo</span></a>
             </li>
 
             <!-- Divider -->
@@ -58,7 +58,7 @@
             </div>
 
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('emails.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Emails Masivos</span></a>
             </li>
