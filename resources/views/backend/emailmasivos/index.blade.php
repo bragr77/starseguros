@@ -4,7 +4,7 @@
 <!-- Animated -->
 <div class="animated fadeIn">
 
-    <h2 class="mb-5 font-weight-bold">MEnsajes Masivos Enviados</h2>
+    <h2 class="mb-5 font-weight-bold">Mensajes Masivos Enviados</h2>
 
     <table id="emailmasivos" class="table table-hover">
         <thead>

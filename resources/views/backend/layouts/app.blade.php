@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{  asset('backend/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{  asset('backend/css/tabla.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
@@ -34,7 +35,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('panel') }}">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-star"></i>
                 </div>
@@ -59,9 +60,15 @@
                 Mensajeria
             </div>
 
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('mensajes.index') }}">
+                    <i class="fas fa-inbox"></i>
+                    <span>Mensajes Recibidos</span></a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-mail-bulk fa-5x"></i>
+                    <i class="fas fa-mail-bulk"></i>
                     <span>Emails Masivos</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -78,11 +85,7 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ route('emails.create') }}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Emails Masivos</span></a>
-            </li>
+
 
             {{--  <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -183,10 +186,12 @@
                     <i class="fa fa-bars"></i>
                   </button>
 
+
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        <!-- Nav Item - Alerts -->
+{{--                          <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
@@ -238,9 +243,9 @@
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>
+                                <i class="fas fa-envelope fa-fw fa-lg"></i>
                                 <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
+                                <span class="badge badge-danger badge-counter">7 +</span>
                             </a>
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
@@ -291,7 +296,7 @@
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
-                        </li>
+                        </li>  --}}
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -385,6 +390,52 @@
     <script>
         $(document).ready(function() {
             $('#emailmasivos').DataTable({
+                language: {
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     'Mostrar <select>'+
+                                       '<option value="10">10</option>'+
+                                       '<option value="20">20</option>'+
+                                       '<option value="30">30</option>'+
+                                       '<option value="40">40</option>'+
+                                       '<option value="50">50</option>'+
+                                       '<option value="100">100</option>'+
+                                       '<option value="150">150</option>'+
+                                       '<option value="200">200</option>'+
+                                       '<option value="500">500</option>'+
+                                       '<option value="-1">Todos</option>'+
+                                       '</select> Registros',
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     "Último",
+                        "sNext":     "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    },
+                    "buttons": {
+                        "copy": "Copiar",
+                        "colvis": "Visibilidad"
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#mensajes').DataTable({
                 language: {
                     "sProcessing":     "Procesando...",
                     "sLengthMenu":     'Mostrar <select>'+

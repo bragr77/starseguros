@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cliente;
+use App\Mensaje;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,7 +28,15 @@ class HomeController extends Controller
 
         $cont = 1;
         $contador = 0;
+        $mcontador = 0;
         $clientes = Cliente::all();
+        $mensajes = Mensaje::all();
+
+        foreach ($mensajes as $mensaje) {
+            if ($mensaje->visto == 0) {
+                $mcontador++;
+            }
+        }
 
         foreach ($clientes as $cliente) {
             $contador++;
@@ -37,6 +46,7 @@ class HomeController extends Controller
             'clientes'  => $clientes,
             'cont'      => $cont,
             'contador'  => $contador,
+            'mcontador'  => $mcontador,
 
         ]);
 

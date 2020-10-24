@@ -30,4 +30,10 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('emails', 'EmailsmasivosController');
 
+    Route::resource('mensajes', 'MensajeController');
+
 });
+
+Route::get('/msjenviado', function () {
+    return view('frontend.msjenviado');
+})->name('msjenviado');

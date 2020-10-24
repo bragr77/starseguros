@@ -474,7 +474,10 @@
                     <div class="col-md-7">
                         <div class="form-box">
                             <h2>Envienos un Mensaje</h2>
-                            <form action="#" method="GET" class="form-content">
+                            <form action="{{ route('mensajes.store') }}" method="POST" class="form-content">
+
+                                @csrf
+
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="nombre">Nombre y Apellido:</label>
@@ -498,7 +501,7 @@
                                     <textarea rows="1" cols="1" id="mensaje" name="mensaje" minlength="3" required></textarea>
                                 </div>
                                 <div class="text-center">
-                                    <input type="submit" class="btn-default" value="Submit" />
+                                    <input type="submit" class="btn-default" value="Enviar" />
                                 </div>
                             </form>
                         </div>
