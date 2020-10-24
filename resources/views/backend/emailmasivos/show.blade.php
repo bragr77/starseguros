@@ -18,6 +18,9 @@
                 <div class="card-footer text-center">
                     {{$mensajemasivo->created_at->format('d / M / Y') }}
                 </div>
+                <div class="card-footer text-center">
+                    <a href="{{ route('emails.index') }}" class="btn btn-primary btn-block">Regresar</a>
+                </div>
             </div>
         </div>
     </div>
