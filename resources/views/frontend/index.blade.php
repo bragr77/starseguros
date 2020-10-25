@@ -70,7 +70,7 @@
                             <a href="#contacto">Contactécnos</a>
                         </li>
                         <li>
-                            <a href="#" class="text-center btn-default">Inscribirse</a>
+                            <a href="{{ route('formulario') }}" class="text-center btn-default">Inscribirse</a>
                         </li>
                         <li>
                             <a href="{{ route('english') }}">English</a>

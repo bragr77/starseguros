@@ -37,3 +37,7 @@ Route::group(['prefix' => 'panel'], function () {
 Route::get('/msjenviado', function () {
     return view('frontend.msjenviado');
 })->name('msjenviado');
+
+Route::get('/formulario', function () {
+    return view('frontend.formulario');
+})->name('formulario');
