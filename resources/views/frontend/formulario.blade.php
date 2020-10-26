@@ -32,7 +32,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
 
-                    <a href="#" class="btn btn-outline-primary">Regresar</a>
+                    <a href="{{ url('/') }}" class="btn btn-outline-primary">Regresar</a>
                 </ul>
             </div>
         </div>
