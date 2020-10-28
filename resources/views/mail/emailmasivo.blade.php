@@ -13,6 +13,7 @@
 
     <p><strong>Mensaje:</strong> {{ $datosemail['mensaje'] }}</p>
 
-
+    {{--  <img src="{{ $message->embed('img/segurocomple.jpg') }}">  --}}
+    {{--  para inscrustar imagenes  --}}
 </body>
 </html>

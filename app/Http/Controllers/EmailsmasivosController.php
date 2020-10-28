@@ -119,6 +119,10 @@ class EmailsmasivosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $mensajemasivo = Mensajemasivo::find($id);
+
+        $mensajemasivo->delete();
+
+        return redirect()->route('emails.index');
     }
 }
