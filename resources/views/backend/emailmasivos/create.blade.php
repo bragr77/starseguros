@@ -25,7 +25,10 @@
         </div>
 
         <div class="col-md-12 ">
-            <button type="submit " value="Enviar " class="btn btn-primary">Enviar</button>
+            <div class="btn-group btn-block" role="group" aria-label="Basic example">
+                <button type="submit " value="Enviar " class="btn btn-primary">Enviar</button>
+                <a href="{{ route('panel') }}" class="btn btn-success">Regresar</a>
+            </div>
         </div>
     </form>
 

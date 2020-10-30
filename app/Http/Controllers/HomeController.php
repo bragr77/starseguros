@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cliente;
+use App\Formulario;
 use App\Mensaje;
 use Illuminate\Http\Request;
 
@@ -29,12 +30,20 @@ class HomeController extends Controller
         $cont = 1;
         $contador = 0;
         $mcontador = 0;
+        $fcontador = 0;
         $clientes = Cliente::all();
         $mensajes = Mensaje::all();
+        $formularios = Formulario::all();
 
         foreach ($mensajes as $mensaje) {
             if ($mensaje->visto == 0) {
                 $mcontador++;
+            }
+        }
+
+        foreach ($formularios as $formulario) {
+            if ($formulario->visto == 0) {
+                $fcontador++;
             }
         }
 
@@ -47,17 +56,8 @@ class HomeController extends Controller
             'cont'      => $cont,
             'contador'  => $contador,
             'mcontador'  => $mcontador,
-
+            'fcontador'  => $fcontador,
         ]);
 
-
-        $cont = 1;
-
-        $mensajes = Mensaje::all();;
-
-        return view('backend.mensajes.index', [
-            'mensajes' => $mensajes,
-            'cont' => $cont,
-        ]);
     }
 }

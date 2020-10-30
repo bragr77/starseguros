@@ -32,6 +32,8 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('mensajes', 'MensajeController');
 
+    Route::resource('formularios', 'FormularioController');
+
 });
 
 Route::get('/msjenviado', function () {
@@ -41,3 +43,4 @@ Route::get('/msjenviado', function () {
 Route::get('/formulario', function () {
     return view('frontend.formulario');
 })->name('formulario');
+
