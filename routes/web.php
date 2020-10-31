@@ -34,6 +34,8 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('formularios', 'FormularioController');
 
+    Route::resource('contactos', 'ContactoController');
+
 });
 
 Route::get('/msjenviado', function () {

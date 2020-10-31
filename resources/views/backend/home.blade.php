@@ -10,12 +10,12 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Clientes Registrados:</div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Contactos:</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $contador }}</div>
                         </div>
                         <div class="col-auto">
                             {{--  <i class="fas fa-calendar fa-2x text-gray-300"></i>  --}}
-                            <i class="fas fa-user-edit fa-3x text-primary"></i>
+                            <i class="fas fa-users fa-3x text-primary"></i>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="box-title">Mis Clientes</h4>
+                        <h4 class="box-title">Mis Contactos</h4>
                     </div>
                     <div class="thead-light">
 
@@ -76,15 +76,17 @@
                                         <th>Nombre</th>
                                         <th>Email</th>
                                         <th>Teléfono</th>
+                                        <th>Cliente</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($emailclientes as $emailcliente)
+                                    @foreach ($contactos as $contacto)
                                         <tr>
                                             <th>{{ $cont++ }}</th>
-                                            <th>{{ $emailcliente->nombre }}</th>
-                                            <th>{{ $emailcliente->email }}</th>
-                                            <th>{{ $emailcliente->telefono }}</th>
+                                            <th>{{ $contacto->nombre }}</th>
+                                            <th>{{ $contacto->email }}</th>
+                                            <th>{{ $contacto->telefono }}</th>
+                                            <th>{{ $contacto->cliente }}</th>
                                         </tr>
                                     @endforeach
                                 </tbody>
