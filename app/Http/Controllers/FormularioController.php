@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
+use App\Emailcliente;
 use App\Formulario;
 use Illuminate\Http\Request;
 
@@ -124,13 +124,13 @@ class FormularioController extends Controller
 
         $formulario->save();
 
-        $cliente = new Cliente();
+        $emailcliente = new Emailcliente();
 
-        $cliente->nombre = $request->input('nombre');
-        $cliente->email = $request->input('email');
-        $cliente->telefono = $request->input('telefono');
+        $emailcliente->nombre = $request->input('nombre');
+        $emailcliente->email = $request->input('email');
+        $emailcliente->telefono = $request->input('telefono');
 
-        $cliente->save();
+        $emailcliente->save();
         return redirect()->route('formularios.index');
     }
 

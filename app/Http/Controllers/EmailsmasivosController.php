@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
+use App\Emailcliente;
 use App\Mail\EmailsMasivos;
 use App\Mensajemasivo;
 use Illuminate\Http\Request;
@@ -56,16 +56,16 @@ class EmailsmasivosController extends Controller
 
         $mensajemasivo->save();
 
-        $clientes = Cliente::all();
+        $emailclientes = Emailcliente::all();
 
-        foreach ($clientes as $cliente) {
+        foreach ($emailclientes as $emailcliente) {
             $datosemail = [
                 'asunto' => $request->input('asunto'),
                 'mensaje' => $request->input('mensaje'),
-                'nombre' => $cliente->nombre,
+                'nombre' => $emailcliente->nombre,
             ];
 
-            Mail::to($cliente->email)->send(new EmailsMasivos($datosemail));
+            Mail::to($emailcliente->email)->send(new EmailsMasivos($datosemail));
         }
 
         return view('backend.emailmasivos.menviado');

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
+use App\Emailcliente;
 use App\Formulario;
 use App\Mensaje;
 use Illuminate\Http\Request;
@@ -31,7 +31,7 @@ class HomeController extends Controller
         $contador = 0;
         $mcontador = 0;
         $fcontador = 0;
-        $clientes = Cliente::all();
+        $emailclientes = Emailcliente::all();
         $mensajes = Mensaje::all();
         $formularios = Formulario::all();
 
@@ -47,12 +47,12 @@ class HomeController extends Controller
             }
         }
 
-        foreach ($clientes as $cliente) {
+        foreach ($emailclientes as $emailcliente) {
             $contador++;
         }
 
         return view('backend.home', [
-            'clientes'  => $clientes,
+            'emailclientes'  => $emailclientes,
             'cont'      => $cont,
             'contador'  => $contador,
             'mcontador'  => $mcontador,

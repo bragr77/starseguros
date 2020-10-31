@@ -1,4 +1,4 @@
-@extends('backend.layouts.app2')
+@extends('backend.layouts.app')
 
 @section('content')
 <!-- Animated -->
@@ -79,12 +79,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($clientes as $cliente)
+                                    @foreach ($emailclientes as $emailcliente)
                                         <tr>
                                             <th>{{ $cont++ }}</th>
-                                            <th>{{ $cliente->nombre }}</th>
-                                            <th>{{ $cliente->email }}</th>
-                                            <th>{{ $cliente->telefono }}</th>
+                                            <th>{{ $emailcliente->nombre }}</th>
+                                            <th>{{ $emailcliente->email }}</th>
+                                            <th>{{ $emailcliente->telefono }}</th>
                                         </tr>
                                     @endforeach
                                 </tbody>
