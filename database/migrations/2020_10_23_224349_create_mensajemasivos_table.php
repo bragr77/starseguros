@@ -17,6 +17,7 @@ class CreateMensajemasivosTable extends Migration
             $table->id();
             $table->string('asunto');
             $table->text('mensaje');
+            $table->string('imagen');
             $table->timestamps();
         });
     }

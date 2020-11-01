@@ -13,7 +13,9 @@
 
     <p><strong>Mensaje:</strong> {{ $datosemail['mensaje'] }}</p>
 
-    {{--  <img src="{{ $message->embed('img/segurocomple.jpg') }}">  --}}
+    <img src="{{ $message->embed('imgmensajes/'.$datosemail['imagen']) }}">
     {{--  para inscrustar imagenes  --}}
+
+    {{--  <img class="img-fluid" src="{{ asset('imgmensajes/'.$mensajemasivo->imagen) }}" alt="">  --}}
 </body>
 </html>

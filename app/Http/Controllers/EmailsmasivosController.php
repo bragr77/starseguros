@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Emailcliente;
+use App\Contacto;
 use App\Mail\EmailsMasivos;
 use App\Mensajemasivo;
 use Illuminate\Http\Request;
@@ -54,18 +54,28 @@ class EmailsmasivosController extends Controller
         $mensajemasivo->asunto  = $request->input('asunto');
         $mensajemasivo->mensaje = $request->input('mensaje');
 
+        if ($request->hasFile('img_path')) {
+            $file = $request->file('img_path');
+            $name = $request->input('imagen') . ".jpg";
+            $file->move(public_path() . '/imgmensajes', $name);
+
+            $mensajemasivo->imagen = $name;
+        }
+
+
         $mensajemasivo->save();
 
-        $emailclientes = Emailcliente::all();
+        $contactos = Contacto::all();
 
-        foreach ($emailclientes as $emailcliente) {
+        foreach ($contactos as $contacto) {
             $datosemail = [
                 'asunto' => $request->input('asunto'),
                 'mensaje' => $request->input('mensaje'),
-                'nombre' => $emailcliente->nombre,
+                'imagen' => $name,
+                'nombre' => $contacto->nombre,
             ];
 
-            Mail::to($emailcliente->email)->send(new EmailsMasivos($datosemail));
+            Mail::to($contacto->email)->send(new EmailsMasivos($datosemail));
         }
 
         return view('backend.emailmasivos.menviado');
@@ -120,6 +130,9 @@ class EmailsmasivosController extends Controller
     public function destroy($id)
     {
         $mensajemasivo = Mensajemasivo::find($id);
+
+        $filepath = public_path() . '/imgmensajes/'. $mensajemasivo->imagen;
+        \File::delete($filepath);
 
         $mensajemasivo->delete();
 
