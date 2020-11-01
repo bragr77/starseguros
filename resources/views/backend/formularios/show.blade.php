@@ -200,7 +200,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond1 }}" readonly readonly>
                 </div>
@@ -254,7 +254,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond2 }}" readonly readonly>
                 </div>
@@ -308,7 +308,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond3 }}" readonly readonly>
                 </div>
@@ -362,7 +362,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond4 }}" readonly readonly>
                 </div>
@@ -416,7 +416,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond5 }}" readonly readonly>
                 </div>
@@ -470,7 +470,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond6 }}" readonly readonly>
                 </div>
@@ -524,7 +524,7 @@
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                      <span class="input-group-text font-weight-bold">Relación:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->relaciond7 }}" readonly readonly>
                 </div>
@@ -591,10 +591,13 @@
             </div>
         </div>
 
-        <div class="row mt-2">
-            <a href="{{ route('formularios.index') }}" class="btn btn-success btn-block">Regresar</a>
-        </div>
+    </div>
 
+    <div class="container card py-3 mt-2">
+        <div class="btn-group btn-block" role="group" aria-label="Basic example">
+            <a href="{{ route('formularios.index') }}" class="btn btn-success">Regresar</a>
+            <a href="{{ route('pdf.show', $formulario) }}" class="btn btn-warning" target="_blank">Descargar PDF</a>
+        </div>
     </div>
 
 </div>

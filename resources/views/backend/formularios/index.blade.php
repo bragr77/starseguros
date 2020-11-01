@@ -32,8 +32,9 @@
                         <form action="{{ route('formularios.destroy', $formulario) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="ml-1 btn btn-danger btn-sm">Eliminar</button>
+                            <button type="submit" class="ml-1 mr-1 btn btn-danger btn-sm">Eliminar</button>
                         </form>
+                        <a href="{{ route('pdf.show', $formulario) }}" class="ml-1 btn btn-warning btn-sm" target="_blank">Ver PDF</a>
                     </div>
                 </td>
             </tr>

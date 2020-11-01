@@ -198,4 +198,5 @@ class FormularioController extends Controller
 
         return redirect()->route('formularios.index');
     }
+
 }

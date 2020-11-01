@@ -36,6 +36,8 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('contactos', 'ContactoController');
 
+    Route::resource('pdf', 'PDFController');
+
 });
 
 Route::get('/msjenviado', function () {
@@ -51,3 +53,4 @@ Route::get('/form', function () {
 })->name('form');
 
 Route::resource('registro', 'FormfrontendController');
+
