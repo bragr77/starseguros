@@ -68,7 +68,7 @@
                             <a href="#contacto">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#" class="text-center btn-default">Register</a>
+                            <a href="{{ route('form') }}" class="text-center btn-default">Register</a>
                         </li>
                         <li>
                             &nbsp &nbsp &nbsp

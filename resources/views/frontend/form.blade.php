@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <title>StarsSeguros Formulario</title>
@@ -32,37 +32,37 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
 
-                    <a href="{{ url('/') }}" class="btn btn-outline-primary">Regresar</a>
+                    <a href="{{ url('/') }}" class="btn btn-outline-primary">Return</a>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <h2 class="font-weight-bold text-center">Formulario de Registro</h2>
+    <h2 class="font-weight-bold text-center">Registration Form</h2>
 
     <form action="{{ route('registro.store') }}" method="POST" class="bg-white">
 
         @csrf
 
             <div class="container card py-3">
-                <h4 class="text-center">Información Personal</h4>
+                <h4 class="text-center">Personal information</h4>
                 <hr>
 
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombre">Nombre:</label>
+                        <label class="text-black" for="nombre">Name:</label>
                         <input type="text" id="nombre" name="nombre" class="form-control" required>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="genero">Genero:</label>
+                        <label for="genero">Gender:</label>
                         <select type="text" id="genero" name="genero" class="form-control" required>
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                            <option selected value="">select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechan">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechan">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -74,22 +74,22 @@
 
                 <div class="row form-group">
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="direccion">Dirección:</label>
+                        <label class="text-black" for="direccion">Address:</label>
                         <input type="text" id="direccion" name="direccion" class="form-control" required>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label class="text-black" for="ciudad">Ciudad:</label>
+                        <label class="text-black" for="ciudad">CCity:</label>
                         <input type="text" id="ciudad" name="ciudad" class="form-control" required>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label class="text-black" for="postal">Código Postal:</label>
+                        <label class="text-black" for="postal">ZIP Code:</label>
                         <input type="text" id="postal" name="postal" class="form-control" required>
                     </div>
                 </div>
 
                 <div class="row form-group">
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="telefono">Teléfono:</label>
+                        <label class="text-black" for="telefono">Telephone:</label>
                         <input type="text" id="telefono" name="telefono" class="form-control" required>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
@@ -100,16 +100,16 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatus">Estatus Legal:</label>
+                        <label for="estatus">Legal status:</label>
                         <select type="text" id="estatus" name="estatus" class="form-control" required>
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                            <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssn">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssn">SSN</label>
                         <div class="input-group">
                             <input name="ssn1" id="ssn1" type="text"  class="form-control" minlength="3" maxlength="3" required>
                             <span class="input-group-text mx-2">-</span>
@@ -119,11 +119,11 @@
                           </div>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estadocivil">Estado Civil:</label>
+                        <label for="estadocivil">Marital status:</label>
                         <select type="text" id="estadocivil" name="estadocivil" class="form-control" onChange="esposo(this.value);" required>
-                            <option selected value="">Selecciona...</option>
-                            <option value="casado">Casado(a)</option>
-                            <option value="soltero">Soltero(a)</option>
+                            <option selected value="">Select...</option>
+                            <option value="casado">Married</option>
+                            <option value="soltero">Single</option>
                          </select>
                     </div>
                 </div>
@@ -131,16 +131,16 @@
 
             <div class="container card py-3 mt-2" id="casado" style="display: none;">
 
-                <h4 class="text-center">Información del Conyugue</h4>
+                <h4 class="text-center">Spouse Information</h4>
                 <hr>
 
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombrecy">Nombre Conyugue:</label>
+                        <label class="text-black" for="nombrecy">Spouse Name:</label>
                         <input type="text" id="nombrecy" name="nombrecy" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generocony">Genero:</label>
+                        <label for="generocony">Gender:</label>
                         <select type="text" id="generocy" name="generocy" class="form-control">
                             <option selected value="">Selecciona...</option>
                             <option value="Femenino">Femenino</option>
@@ -148,7 +148,7 @@
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechancy">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechancy">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -160,16 +160,16 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatuscy">Estatus Legal:</label>
+                        <label for="estatuscy">Legal status::</label>
                         <select type="text" id="estatuscy" name="estatuscy" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssncy">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssncy">SSN</label>
                         <div class="input-group">
                             <input name="ssn1cy" id="ssn1cy" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -183,26 +183,26 @@
             </div>
 
             <div class="container card py-3 mt-2">
-                <h4 class="text-center">Información de Ingresos</h4>
+                <h4 class="text-center">Income Information</h4>
                 <hr>
                 <div class="row form-group">
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ingreso">Ingreso Grupal Anual en USD($):</label>
+                        <label class="text-black" for="ingreso">Annual Group Income in USD ($):</label>
                         <input type="text" id="ingreso" name="ingreso" class="form-control" onkeyup="format(this)" onchange="format(this)" required>
                     </div>
                 </div>
 
                 <div class="row form-group">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <label class="text-black" for="banco">Nombre del Banco:</label>
+                        <label class="text-black" for="banco">Name of the bank:</label>
                         <input type="text" id="banco" name="banco" class="form-control" required>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <label class="text-black" for="ruta">Ruta:</label>
+                        <label class="text-black" for="ruta">Route:</label>
                         <input type="text" id="ruta" name="ruta" class="form-control" required>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <label class="text-black" for="cuenta">Nro. de Cuenta:</label>
+                        <label class="text-black" for="cuenta">Account number:</label>
                         <input type="text" id="cuenta" name="cuenta" class="form-control" required>
                     </div>
                 </div>
@@ -210,10 +210,10 @@
 
             <div class="container card py-3 mt-2">
                 <div class="col-md-3 mb-3 mb-md-0">
-                    <label for="agregardependientes">Desea Agregar Dependientes:</label>
+                    <label for="agregardependientes">You want to add dependents:</label>
                     <select type="text" id="agregardependientes" name="agregardependientes" class="form-control" onChange="dependiente(this.value);" required>
                         <option selected value="no">No</option>
-                        <option value="si">Si</option>
+                        <option value="si">Yes</option>
                         {{--  <option value="no">No</option>  --}}
                      </select>
                 </div>
@@ -221,25 +221,25 @@
 
             <div class="container card py-3 mt-2" id="si" style="display: none;">
 
-                <h4 class="text-center">Dependientes</h4>
+                <h4 class="text-center">Dependents</h4>
                 <hr>
 
                 {{--  dependiente 1  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred1">1. Nombre</label>
+                        <label class="text-black" for="nombred1">1. Name:</label>
                         <input type="text" id="nombred1" name="nombred1" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod1">Genero:</label>
+                        <label for="generod1">Gender:</label>
                         <select type="text" id="generod1" name="generod1" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand1">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand1">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -251,33 +251,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond1">Relación:</label>
+                        <label for="relaciond1">Relationship:</label>
                         <select type="text" id="relaciond1" name="relaciond1" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd1">Estatus Legal:</label>
+                        <label for="estatusd1">Legal status:</label>
                         <select type="text" id="estatusd1" name="estatusd1" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd1">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd1">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d1" id="ssn1d1" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -292,19 +292,19 @@
                 {{--  dependiente 2  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred2">2. Nombre</label>
+                        <label class="text-black" for="nombred2">2. Name:</label>
                         <input type="text" id="nombred2" name="nombred2" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod2">Genero:</label>
+                        <label for="generod2">Gender:</label>
                         <select type="text" id="generod2" name="generod2" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand2">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand2">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -316,33 +316,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond2">Relación:</label>
+                        <label for="relaciond2">Relationship:</label>
                         <select type="text" id="relaciond2" name="relaciond2" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd2">Estatus Legal:</label>
+                        <label for="estatusd2">Legal status:</label>
                         <select type="text" id="estatusd2" name="estatusd2" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd2">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd2">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d2" id="ssn1d2" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -357,19 +357,19 @@
                 {{--  dependiente 3  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred3">3. Nombre</label>
+                        <label class="text-black" for="nombred3">3. Name:</label>
                         <input type="text" id="nombred3" name="nombred3" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod3">Genero:</label>
+                        <label for="generod3">Gender:</label>
                         <select type="text" id="generod3" name="generod3" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand3">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand3">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -381,33 +381,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond3">Relación:</label>
+                        <label for="relaciond3">Relationship:</label>
                         <select type="text" id="relaciond3" name="relaciond3" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd3">Estatus Legal:</label>
+                        <label for="estatusd3">Legal status:</label>
                         <select type="text" id="estatusd3" name="estatusd3" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd3">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd3">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d3" id="ssn1d3" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -422,19 +422,19 @@
                 {{--  dependiente 4  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred4">4. Nombre</label>
+                        <label class="text-black" for="nombred4">4. Name:</label>
                         <input type="text" id="nombred4" name="nombred4" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod4">Genero:</label>
+                        <label for="generod4">Gender:</label>
                         <select type="text" id="generod4" name="generod4" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand4">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand4">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -446,33 +446,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond4">Relación:</label>
+                        <label for="relaciond4">Relationship:</label>
                         <select type="text" id="relaciond4" name="relaciond4" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd4">Estatus Legal:</label>
+                        <label for="estatusd4">Legal status:</label>
                         <select type="text" id="estatusd4" name="estatusd4" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd4">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd4">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d4" id="ssn1d4" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -487,19 +487,19 @@
                 {{--  dependiente 5  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred5">5. Nombre</label>
+                        <label class="text-black" for="nombred5">5. Name:</label>
                         <input type="text" id="nombred5" name="nombred5" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod5">Genero:</label>
+                        <label for="generod5">Gender:</label>
                         <select type="text" id="generod5" name="generod5" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand5">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand5">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -511,33 +511,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond5">Relación:</label>
+                        <label for="relaciond5">Relationship:</label>
                         <select type="text" id="relaciond5" name="relaciond5" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd5">Estatus Legal:</label>
+                        <label for="estatusd5">Legal status:</label>
                         <select type="text" id="estatusd5" name="estatusd5" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd5">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd5">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d5" id="ssn1d5" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -552,19 +552,19 @@
                 {{--  dependiente 6  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred6">6. Nombre</label>
+                        <label class="text-black" for="nombred6">6. Name:</label>
                         <input type="text" id="nombred6" name="nombred6" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod6">Genero:</label>
+                        <label for="generod6">Gender:</label>
                         <select type="text" id="generod6" name="generod6" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">Select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand6">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand6">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -576,33 +576,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond6">Relación:</label>
+                        <label for="relaciond6">Relationship:</label>
                         <select type="text" id="relaciond6" name="relaciond6" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">Select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd6">Estatus Legal:</label>
+                        <label for="estatusd6">Legal status:</label>
                         <select type="text" id="estatusd6" name="estatusd6" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">Select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd6">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd6">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d6" id="ssn1d6" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -617,19 +617,19 @@
                 {{--  dependiente 7  --}}
                 <div class="row form-group">
                     <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred7">7. Nombre</label>
+                        <label class="text-black" for="nombred7">7. Name:</label>
                         <input type="text" id="nombred7" name="nombred7" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="generod7">Genero:</label>
+                        <label for="generod7">Gender:</label>
                         <select type="text" id="generod7" name="generod7" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
+                             <option selected value="">select...</option>
+                            <option value="Femenino">Female</option>
+                            <option value="Masculino">Male</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label class="text-black" for="fechand7">Fecha de Nacimiento:</label>
+                        <label class="text-black" for="fechand7">Birthdate:</label>
                         <div class="input-group date rg-date">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
@@ -641,33 +641,33 @@
 
                 <div class="row form-group">
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="relaciond7">Relación:</label>
+                        <label for="relaciond7">Relationship:</label>
                         <select type="text" id="relaciond7" name="relaciond7" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Padre">Padre</option>
-                            <option value="Madre">Madre</option>
-                            <option value="Hijo">Hijo</option>
-                            <option value="Hija">Hija</option>
-                            <option value="Abuelo">Abuelo</option>
-                            <option value="Abuela">Abuela</option>
-                            <option value="Nieto">Nieto</option>
-                            <option value="Nieta">Nieta</option>
-                            <option value="sobrino">sobrino</option>
-                            <option value="sobrina">sobrina</option>
+                            <option selected value="">select...</option>
+                            <option value="Padre">Father</option>
+                            <option value="Madre">Mother</option>
+                            <option value="Hijo">Son</option>
+                            <option value="Hija">Daughter</option>
+                            <option value="Abuelo">Grandfather</option>
+                            <option value="Abuela">Grandmother</option>
+                            <option value="Nieto">Grandchild</option>
+                            <option value="Nieta">Granddaughter</option>
+                            <option value="sobrino">nephew</option>
+                            <option value="sobrina">niece</option>
 
                         </select>
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
-                        <label for="estatusd7">Estatus Legal:</label>
+                        <label for="estatusd7">Legal status:</label>
                         <select type="text" id="estatusd7" name="estatusd7" class="form-control">
-                            <option selected value="">Selecciona...</option>
-                            <option value="Ciudadano">Ciudadano</option>
-                            <option value="Residente">Residente</option>
-                            <option value="Permiso de Trabajo">Permiso de Trabajo</option>
+                             <option selected value="">select...</option>
+                            <option value="Ciudadano">Citizen</option>
+                            <option value="Residente">Resident</option>
+                            <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="ssnd7">Nro. Seguro Social</label>
+                        <label class="text-black" for="ssnd7">SSN:</label>
                         <div class="input-group">
                             <input name="ssn1d7" id="ssn1d7" type="text" class="form-control" minlength="3" maxlength="3">
                             <span class="input-group-text mx-2">-</span>
@@ -750,3 +750,4 @@
 </body>
 
 </html>
+

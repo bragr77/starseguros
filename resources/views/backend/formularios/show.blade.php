@@ -202,6 +202,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Estatus:</span>
                     </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond1 }}" readonly readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
                     <input type="text" class="form-control" value="{{ $formulario->estatusd1 }}" readonly readonly>
                 </div>
             </div>
@@ -243,6 +251,14 @@
             </div>
         </div>
         <div class="row mt-2 @if (is_null($formulario->nombred2)) d-none @else @endif">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond2 }}" readonly readonly>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -294,6 +310,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Estatus:</span>
                     </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond3 }}" readonly readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
                     <input type="text" class="form-control" value="{{ $formulario->estatusd3 }}" readonly>
                 </div>
             </div>
@@ -335,6 +359,14 @@
             </div>
         </div>
         <div class="row mt-2 @if (is_null($formulario->nombred4)) d-none @else @endif">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond4 }}" readonly readonly>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -386,6 +418,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Estatus:</span>
                     </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond5 }}" readonly readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
                     <input type="text" class="form-control" value="{{ $formulario->estatusd5 }}" readonly readonly>
                 </div>
             </div>
@@ -432,6 +472,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Estatus:</span>
                     </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond6 }}" readonly readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
                     <input type="text" class="form-control" value="{{ $formulario->estatusd6 }}" readonly>
                 </div>
             </div>
@@ -473,6 +521,14 @@
             </div>
         </div>
         <div class="row mt-2 @if (is_null($formulario->nombred7)) d-none @else @endif">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Estatus:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->relaciond7 }}" readonly readonly>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">

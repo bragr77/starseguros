@@ -46,3 +46,8 @@ Route::get('/formulario', function () {
     return view('frontend.formulario');
 })->name('formulario');
 
+Route::get('/form', function () {
+    return view('frontend.form');
+})->name('form');
+
+Route::resource('registro', 'FormfrontendController');
