@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/flexslider.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/owl.carousel.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/estilo.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/cookieconsent.css') }}"/>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
@@ -544,6 +545,9 @@
                                 <a href="https://www.facebook.com/profile.php?id=100047240031956" target="_blank"><i class="fa fa-facebook-square fa-3x" style="color: #fff; margin: 10px;"></i></a>
                                 {{--  <a href="#"><i class="fa fa-linkedin-square fa-3x" style="color: #fff; margin: 10px;"></i></a>  --}}
                             </div>
+                            <div class="row">
+                                <img src="img/ssl.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -571,6 +575,21 @@
         <script src="{{ asset('frontend/js/easyResponsiveTabs.js') }}"></script>
         <script src="{{ asset('frontend/js/owl.carousel.js') }}"></script>
         <script src="{{ asset('frontend/js/custom.js') }}"></script>
+
+        <script src="{{ asset('frontend/js/cookieconsent.js') }}"></script>
+
+        <script>
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#00B2CE"
+                    }
+                }
+            });
+        </script>
 </body>
 
 </html>
