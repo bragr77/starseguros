@@ -698,7 +698,7 @@
 
     <script>
         $('.rg-date').datepicker({
-            format: "dd/mm/yyyy"
+            format: "mm/dd/yyyy"
         });
     </script>
 
