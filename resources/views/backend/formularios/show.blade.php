@@ -596,6 +596,7 @@
     <div class="container card py-3 mt-2">
         <div class="btn-group btn-block" role="group" aria-label="Basic example">
             <a href="{{ route('formularios.index') }}" class="btn btn-success">Regresar</a>
+            <a href="{{ route('formularios.edit', $formulario) }}" class="btn btn-primary">Editar</a>
             <a href="{{ route('pdf.show', $formulario) }}" class="btn btn-warning" target="_blank">Descargar PDF</a>
         </div>
     </div>
