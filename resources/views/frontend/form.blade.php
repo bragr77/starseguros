@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="row form-group">
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="estatus">Legal status:</label>
                         <select type="text" id="estatus" name="estatus" class="form-control" required>
                             <option selected value="">Select...</option>
@@ -108,17 +108,11 @@
                             <option value="Permiso de Trabajo">(PT) Work permit</option>
                         </select>
                     </div>
-                    <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="ssn">SSN</label>
-                        <div class="input-group">
-                            <input name="ssn1" id="ssn1" type="text"  class="form-control" minlength="3" maxlength="3" required>
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2" id="ssn2" type="text" class="form-control" minlength="2" maxlength="2" required>
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3" id="ssn3" type="text" class="form-control" minlength="4" maxlength="4" required>
-                          </div>
+                        <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-000" required>
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="estadocivil">Marital status:</label>
                         <select type="text" id="estadocivil" name="estadocivil" class="form-control" onChange="esposo(this.value);" required>
                             <option selected value="">Select...</option>
@@ -170,13 +164,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">SSN</label>
-                        <div class="input-group">
-                            <input name="ssn1cy" id="ssn1cy" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2cy" id="ssn2cy" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3cy" id="ssn3cy" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000" required>
                     </div>
                 </div>
 
@@ -278,13 +266,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd1">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d1" id="ssn1d1" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d1" id="ssn2d1" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d1" id="ssn3d1" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd1" id="ssnd1" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 1  --}}
@@ -343,16 +325,10 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd2">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d2" id="ssn1d2" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d2" id="ssn2d2" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d2" id="ssn3d2" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd2" id="ssnd2" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
-                {{--  Fin dependiente 1  --}}
+                {{--  Fin dependiente 2  --}}
                 <hr>
                 {{--  dependiente 3  --}}
                 <div class="row form-group">
@@ -408,13 +384,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd3">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d3" id="ssn1d3" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d3" id="ssn2d3" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d3" id="ssn3d3" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd3" id="ssnd3" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 3  --}}
@@ -473,13 +443,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd4">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d4" id="ssn1d4" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d4" id="ssn2d4" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d4" id="ssn3d4" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd4" id="ssnd4" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 4  --}}
@@ -538,13 +502,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd5">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d5" id="ssn1d5" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d5" id="ssn2d5" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d5" id="ssn3d5" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd5" id="ssnd5" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 5  --}}
@@ -603,13 +561,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd6">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d6" id="ssn1d6" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d6" id="ssn2d6" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d6" id="ssn3d6" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd6" id="ssnd6" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 6  --}}
@@ -668,13 +620,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd7">SSN:</label>
-                        <div class="input-group">
-                            <input name="ssn1d7" id="ssn1d7" type="text" class="form-control" minlength="3" maxlength="3">
-                            <span class="input-group-text mx-2">-</span>
-                            <input name="ssn2d7" id="ssn2d7" type="text"  class="form-control" minlength="2" maxlength="2">
-                            <span class="input-group-text mx-2" id="addon-wrapping">-</span>
-                            <input name="ssn3d7" id="ssn3d7" type="text" class="form-control" minlength="4" maxlength="4">
-                          </div>
+                        <input name="ssnd7" id="ssnd7" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
                 {{--  Fin dependiente 7  --}}
@@ -692,6 +638,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="{{  asset('backend/js/jquery.mask.min.js') }}"></script>
+    <script src="{{  asset('backend/js/mascaras.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <script src="{{ asset('frontend/datepicker/js/bootstrap-datepicker-es.js') }}"></script>
