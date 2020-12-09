@@ -60,43 +60,82 @@
 
     <div class="clearfix"></div>
     <!-- Orders -->
-    <div class="orders">
+    <div class="">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="box-title">Mis Contactos</h4>
-                    </div>
+
+            <!-- Area Contactos -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Contactos</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
                     <div class="thead-light">
-
-                            <table class="table">
-                                <thead class="thead-light">
+                        <table id="contactoshome" class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Nombre</th>
+                                    {{--  <th>Email</th>
+                                    <th>Teléfono</th>  --}}
+                                    <th>Cliente</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($contactos as $contacto)
                                     <tr>
-                                        <th>N°</th>
-                                        <th>Nombre</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Cliente</th>
+                                        <th>{{ $cont++ }}</th>
+                                        <th>{{ $contacto->nombre }}</th>
+                                       {{--   <th>{{ $contacto->email }}</th>
+                                        <th>{{ $contacto->telefono }}</th>  --}}
+                                        <th>{{ $contacto->cliente }}</th>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($contactos as $contacto)
-                                        <tr>
-                                            <th>{{ $cont++ }}</th>
-                                            <th>{{ $contacto->nombre }}</th>
-                                            <th>{{ $contacto->email }}</th>
-                                            <th>{{ $contacto->telefono }}</th>
-                                            <th>{{ $contacto->cliente }}</th>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+              </div>
+            </div>
 
+            <!-- Area Mensajes -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Mensajes Recibidos</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="thead-light">
+                        <table id="mensajeshome" class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Nombre</th>
+                                    {{--  <th>Email</th>
+                                    <th>Teléfono</th>  --}}
+                                    <th>Asunto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($mensajes as $mensaje)
+                                    <tr>
+                                        <th>{{ $cont++ }}</th>
+                                        <th>{{ $mensaje->nombre }}</th>
+                                        <th>{{ $mensaje->asunto }}</th>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
+
     </div>
 </div>
 <!-- .animated -->

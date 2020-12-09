@@ -38,6 +38,8 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('pdf', 'PDFController');
 
+    Route::get('/planilla/{id}', 'PlanillaController@planilla' )->name('planilla');
+
 });
 
 Route::get('/msjenviado', function () {
@@ -53,4 +55,5 @@ Route::get('/form', function () {
 })->name('form');
 
 Route::resource('registro', 'FormfrontendController');
+
 

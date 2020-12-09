@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">Nro. Seguro Social</label>
-                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000" required>
+                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
 

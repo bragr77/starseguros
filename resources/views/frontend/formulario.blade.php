@@ -164,7 +164,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">Nro. Seguro Social</label>
-                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000" required>
+                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
                 </div>
 
@@ -627,7 +627,7 @@
 
             </div>
 
-            <div class="col-md-12 my-2">
+            <div class="container card py-3 mt-2">
                 <div class="btn-group btn-block" role="group" aria-label="Basic example">
                     <button type="submit " value="Enviar " class="btn btn-primary">Enviar</button>
                     <a href="{{ route('panel') }}" class="btn btn-success">Regresar</a>

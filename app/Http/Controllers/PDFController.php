@@ -47,13 +47,17 @@ class PDFController extends Controller
      */
     public function show($id)
     {
+        $cont = 1;
+
         $formulario = Formulario::find($id);
 
-        /* return view('backend.pdfs.index', [
-            'formulario' => $formulario,
-        ]); */
+        $dependientes = $formulario->dependientes()->get();
 
-        $pdf = PDF::loadView('backend.pdfs.index' , ['formulario' => $formulario]);
+        $pdf = PDF::loadView('backend.pdfs.index' , [
+            'formulario' => $formulario,
+            'dependientes' => $dependientes,
+            'cont' => $cont,
+        ]);
         return $pdf->stream('formulario.pdf');
     }
 

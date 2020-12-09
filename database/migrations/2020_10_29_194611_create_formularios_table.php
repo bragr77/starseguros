@@ -37,55 +37,7 @@ class CreateFormulariosTable extends Migration
             $table->string('banco');
             $table->string('ruta');
             $table->string('cuenta');
-
-            $table->string('nombred1')->nullable();
-            $table->string('generod1')->nullable();
-            $table->string('fechand1')->nullable();
-            $table->string('relaciond1')->nullable();
-            $table->string('estatusd1')->nullable();
-            $table->string('ssnd1')->nullable();
-
-            $table->string('nombred2')->nullable();
-            $table->string('generod2')->nullable();
-            $table->string('fechand2')->nullable();
-            $table->string('relaciond2')->nullable();
-            $table->string('estatusd2')->nullable();
-            $table->string('ssnd2')->nullable();
-
-            $table->string('nombred3')->nullable();
-            $table->string('generod3')->nullable();
-            $table->string('fechand3')->nullable();
-            $table->string('relaciond3')->nullable();
-            $table->string('estatusd3')->nullable();
-            $table->string('ssnd3')->nullable();
-
-            $table->string('nombred4')->nullable();
-            $table->string('generod4')->nullable();
-            $table->string('fechand4')->nullable();
-            $table->string('relaciond4')->nullable();
-            $table->string('estatusd4')->nullable();
-            $table->string('ssnd4')->nullable();
-
-            $table->string('nombred5')->nullable();
-            $table->string('generod5')->nullable();
-            $table->string('fechand5')->nullable();
-            $table->string('relaciond5')->nullable();
-            $table->string('estatusd5')->nullable();
-            $table->string('ssnd5')->nullable();
-
-            $table->string('nombred6')->nullable();
-            $table->string('generod6')->nullable();
-            $table->string('fechand6')->nullable();
-            $table->string('relaciond6')->nullable();
-            $table->string('estatusd6')->nullable();
-            $table->string('ssnd6')->nullable();
-
-            $table->string('nombred7')->nullable();
-            $table->string('generod7')->nullable();
-            $table->string('fechand7')->nullable();
-            $table->string('relaciond7')->nullable();
-            $table->string('estatusd7')->nullable();
-            $table->string('ssnd7')->nullable();
+            $table->string('dependientes');
 
             $table->integer('visto');
 

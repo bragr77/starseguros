@@ -52,11 +52,12 @@ class HomeController extends Controller
         }
 
         return view('backend.home', [
-            'contactos'  => $contactos,
+            'contactos' => $contactos,
+            'mensajes'  => $mensajes,
             'cont'      => $cont,
             'contador'  => $contador,
-            'mcontador'  => $mcontador,
-            'fcontador'  => $fcontador,
+            'mcontador' => $mcontador,
+            'fcontador' => $fcontador,
         ]);
 
     }
