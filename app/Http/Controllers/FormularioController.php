@@ -201,7 +201,7 @@ class FormularioController extends Controller
 
         $contacto = new Contacto();
 
-        $contacto->nombre = $request->input('nombre');
+        $contacto->nombre = $request->input('nombre'). " " .$request->input('nombre2'). " " .$request->input('apellido'). " " .$request->input('apellido2');
         $contacto->email = $request->input('email');
         $contacto->telefono = $request->input('telefono');
         $contacto->cliente = "Si";

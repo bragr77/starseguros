@@ -1,8 +1,8 @@
 @csrf
 
 <div class="form-group">
-    <label for="name" class="font-weight-bold">Nombre:</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" @isset($contacto) value="{{ $contacto->nombre }}" @endisset placeholder="Ingrese el Nombre" required>
+    <label for="name" class="font-weight-bold">Nombres y Apellidos:</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" @isset($contacto) value="{{ $contacto->nombre }}" @endisset placeholder="Ingrese los Nombres y Apellidos" required>
 </div>
 
 <div class="form-group">
