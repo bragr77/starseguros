@@ -15,7 +15,7 @@
                             <th scope="col">N°</th>
                             <th scope="col">Nombres y Apellidos</th>
                             <th scope="col">Relacion</th>
-                            <th scope="col">Cliente</th>
+                            <th scope="col">Titular</th>
                             <th scope="col">Acciones</th>
                         </tr>
                     </thead>
