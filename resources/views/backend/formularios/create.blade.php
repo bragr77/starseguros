@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="nombre2">Segundo Nombre:</label>
-                        <input type="text" id="nombre2" name="nombre2" class="form-control" required>
+                        <input type="text" id="nombre2" name="nombre2" class="form-control">
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="apellido">Primer Apellido:</label>
@@ -31,7 +31,7 @@
                 <div class="row form-group">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="apellido2">Segundo Apellido:</label>
-                        <input type="text" id="apellido2" name="apellido2" class="form-control" required>
+                        <input type="text" id="apellido2" name="apellido2" class="form-control">
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label for="genero">Genero:</label>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="ssn">Nro. Seguro Social</label>
-                        <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-000" required>
+                        <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-0000" required>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label for="estadocivil">Estado Civil:</label>
@@ -159,7 +159,7 @@
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">Nro. Seguro Social</label>
-                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000">
+                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
 
@@ -276,7 +276,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd1">Nro. Seguro Social</label>
-                        <input name="ssnd1" id="ssnd1" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd1" id="ssnd1" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 1  --}}
@@ -349,7 +349,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd2">Nro. Seguro Social</label>
-                        <input name="ssnd2" id="ssnd2" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd2" id="ssnd2" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 1  --}}
@@ -422,7 +422,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd3">Nro. Seguro Social</label>
-                        <input name="ssnd3" id="ssnd3" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd3" id="ssnd3" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 3  --}}
@@ -495,7 +495,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd4">Nro. Seguro Social</label>
-                        <input name="ssnd4" id="ssnd4" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd4" id="ssnd4" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 4  --}}
@@ -568,7 +568,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd5">Nro. Seguro Social</label>
-                        <input name="ssnd5" id="ssnd5" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd5" id="ssnd5" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 5  --}}
@@ -641,7 +641,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd6">Nro. Seguro Social</label>
-                        <input name="ssnd6" id="ssnd6" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd6" id="ssnd6" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 6  --}}
@@ -714,7 +714,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd7">Nro. Seguro Social</label>
-                        <input name="ssnd7" id="ssnd7" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd7" id="ssnd7" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 7  --}}

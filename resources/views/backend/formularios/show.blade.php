@@ -399,7 +399,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <label class="text-black" for="ssn">Nro. Seguro Social</label>
-                            <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-000" required>
+                            <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-0000" required>
                         </div>
                     </div>
 

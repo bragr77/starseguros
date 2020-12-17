@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="nombre2">Second Name:</label>
-                        <input type="text" id="nombre2" name="nombre2" class="form-control" required>
+                        <input type="text" id="nombre2" name="nombre2" class="form-control">
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="apellido">First Surname:</label>
@@ -66,7 +66,7 @@
                 <div class="row form-group">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="apellido2">Second Surname:</label>
-                        <input type="text" id="apellido2" name="apellido2" class="form-control" required>
+                        <input type="text" id="apellido2" name="apellido2" class="form-control">
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label for="genero">Gender:</label>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="ssn">SSN</label>
-                        <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-000" required>
+                        <input name="ssn" id="ssn" type="text"  class="form-control" placeholder="000-00-0000" required>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
                         <label for="estadocivil">Marital status:</label>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">SSN</label>
-                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000">
+                        <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
 
@@ -309,7 +309,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd1">SSN:</label>
-                        <input name="ssnd1" id="ssnd1" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd1" id="ssnd1" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 1  --}}
@@ -382,7 +382,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd2">SSN:</label>
-                        <input name="ssnd2" id="ssnd2" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd2" id="ssnd2" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 2  --}}
@@ -455,7 +455,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd3">SSN:</label>
-                        <input name="ssnd3" id="ssnd3" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd3" id="ssnd3" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 3  --}}
@@ -528,7 +528,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd4">SSN:</label>
-                        <input name="ssnd4" id="ssnd4" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd4" id="ssnd4" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 4  --}}
@@ -601,7 +601,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd5">SSN:</label>
-                        <input name="ssnd5" id="ssnd5" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd5" id="ssnd5" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 5  --}}
@@ -674,7 +674,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd6">SSN:</label>
-                        <input name="ssnd6" id="ssnd6" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd6" id="ssnd6" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 6  --}}
@@ -747,7 +747,7 @@
                     </div>
                     <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="ssnd7">SSN:</label>
-                        <input name="ssnd7" id="ssnd7" type="text"  class="form-control" placeholder="000-00-000">
+                        <input name="ssnd7" id="ssnd7" type="text"  class="form-control" placeholder="000-00-0000">
                     </div>
                 </div>
                 {{--  Fin dependiente 7  --}}
