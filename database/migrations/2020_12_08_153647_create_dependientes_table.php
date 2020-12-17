@@ -19,6 +19,9 @@ class CreateDependientesTable extends Migration
             $table->bigInteger('formulario_id')->unsigned();
 
             $table->string('nombre')->nullable();
+            $table->string('nombre2')->nullable();
+            $table->string('apellido')->nullable();
+            $table->string('apellido2')->nullable();
             $table->string('genero')->nullable();
             $table->string('fechan')->nullable();
             $table->string('relacion')->nullable();

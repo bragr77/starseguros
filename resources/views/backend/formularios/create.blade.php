@@ -14,11 +14,26 @@
                 <hr>
 
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombre">Nombre:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombre">Primer Nombre:</label>
                         <input type="text" id="nombre" name="nombre" class="form-control" required>
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombre2">Segundo Nombre:</label>
+                        <input type="text" id="nombre2" name="nombre2" class="form-control" required>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellido">Primer Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellido2">Segundo Apellido:</label>
+                        <input type="text" id="apellido2" name="apellido2" class="form-control" required>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="genero">Genero:</label>
                         <select type="text" id="genero" name="genero" class="form-control" required>
                             <option selected value="">Selecciona...</option>
@@ -94,9 +109,24 @@
                 <hr>
 
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombrecy">Nombre Conyugue:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombrecy">Primer Nombre:</label>
                         <input type="text" id="nombrecy" name="nombrecy" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombrecy2">Segundo Nombre:</label>
+                        <input type="text" id="nombrecy2" name="nombrecy2" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidocy">Primer Apellido:</label>
+                        <input type="text" id="apellidocy" name="apellidocy" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidocy2">Segundo Apellido:</label>
+                        <input type="text" id="apellidocy2" name="apellidocy2" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
                         <label for="generocony">Genero:</label>
@@ -127,7 +157,7 @@
                             <option value="Permiso de Trabajo">Permiso de Trabajo</option>
                         </select>
                     </div>
-                    <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label class="text-black" for="ssncy">Nro. Seguro Social</label>
                         <input id="ssncy" name="ssncy" type="text"  class="form-control" placeholder="000-00-000">
                     </div>
@@ -178,12 +208,27 @@
                 <hr>
 
                 {{--  dependiente 1  --}}
+                <strong></strong>
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred1">1. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred1">1. Primer Nombre</label>
                         <input type="text" id="nombred1" name="nombred1" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred12">Segundo Nombre</label>
+                        <input type="text" id="nombred12" name="nombred12" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod1">Primer Apellido</label>
+                        <input type="text" id="apellidod1" name="apellidod1" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod12">Segundo Apellido</label>
+                        <input type="text" id="apellidod12" name="apellidod12" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod1">Genero:</label>
                         <select type="text" id="generod1" name="generod1" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -238,11 +283,25 @@
                 <hr>
                 {{--  dependiente 2  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred2">2. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred2">2. Primer Nombre</label>
                         <input type="text" id="nombred2" name="nombred2" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred22">Segundo Nombre</label>
+                        <input type="text" id="nombred22" name="nombred22" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod2">Primer Apellido</label>
+                        <input type="text" id="apellidod2" name="apellidod2" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod22">Segundo Apellido</label>
+                        <input type="text" id="apellidod22" name="apellidod22" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod2">Genero:</label>
                         <select type="text" id="generod2" name="generod2" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -297,11 +356,25 @@
                 <hr>
                 {{--  dependiente 3  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred3">3. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred3">3. Primer Nombre</label>
                         <input type="text" id="nombred3" name="nombred3" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred32">Segundo Nombre</label>
+                        <input type="text" id="nombred32" name="nombred32" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod3">Primer Apellido</label>
+                        <input type="text" id="apellidod3" name="apellidod3" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod32">Segundo Apellido</label>
+                        <input type="text" id="apellidod32" name="apellidod32" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod3">Genero:</label>
                         <select type="text" id="generod3" name="generod3" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -356,11 +429,25 @@
                 <hr>
                 {{--  dependiente 4  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred4">4. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred4">4. Primer Nombre</label>
                         <input type="text" id="nombred4" name="nombred4" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred42">Segundo Nombre</label>
+                        <input type="text" id="nombred42" name="nombred42" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod4">Primer Apellido</label>
+                        <input type="text" id="apellidod4" name="apellidod4" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod42">Segundo Apellido</label>
+                        <input type="text" id="apellidod42" name="apellidod42" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod4">Genero:</label>
                         <select type="text" id="generod4" name="generod4" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -415,11 +502,25 @@
                 <hr>
                 {{--  dependiente 5  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred5">5. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred5">5. Primer Nombre</label>
                         <input type="text" id="nombred5" name="nombred5" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred52">Segundo Nombre</label>
+                        <input type="text" id="nombred52" name="nombred52" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod5">Primer Apellido</label>
+                        <input type="text" id="apellidod5" name="apellidod5" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod52">Segundo Apellido</label>
+                        <input type="text" id="apellidod52" name="apellidod52" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod5">Genero:</label>
                         <select type="text" id="generod5" name="generod5" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -474,11 +575,25 @@
                 <hr>
                 {{--  dependiente 6  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred6">6. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred6">6. Primer Nombre</label>
                         <input type="text" id="nombred6" name="nombred6" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred62">Segundo Nombre</label>
+                        <input type="text" id="nombred62" name="nombred62" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod6">Primer Apellido</label>
+                        <input type="text" id="apellidod6" name="apellidod6" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod62">Segundo Apellido</label>
+                        <input type="text" id="apellidod62" name="apellidod62" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod6">Genero:</label>
                         <select type="text" id="generod6" name="generod6" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -533,11 +648,25 @@
                 <hr>
                 {{--  dependiente 7  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred7">7. Nombre</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred7">7. Primer Nombre</label>
                         <input type="text" id="nombred7" name="nombred7" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred72">Segundo Nombre</label>
+                        <input type="text" id="nombred72" name="nombred72" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod7">Primer Apellido</label>
+                        <input type="text" id="apellidod7" name="apellidod7" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod72">Segundo Apellido</label>
+                        <input type="text" id="apellidod72" name="apellidod72" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod7">Genero:</label>
                         <select type="text" id="generod7" name="generod7" class="form-control">
                             <option selected value="">Selecciona...</option>
@@ -603,11 +732,6 @@
 </div>
 <!-- .animated -->
 
-<script>
-    $('.rg-date').datepicker({
-        format: "dd/mm/yyyy"
-    });
-</script>
 
 <script type="text/javascript">
     function esposo(id) {

@@ -10,15 +10,41 @@
         <h4 class="text-center">Información Personal</h4>
         <hr>
         <div class="row mt-2">
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Nombre:</span>
+                      <span class="input-group-text font-weight-bold">Primer Nombre:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->nombre }}" readonly>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Segundo Nombre:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->nombre2 }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Primer Apellido:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->apellido }}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Segundo Apellido:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->apellido2 }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Genero:</span>
@@ -117,16 +143,42 @@
         <hr>
 
         <div class="row mt-2">
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text font-weight-bold">Nombre:</span>
+                      <span class="input-group-text font-weight-bold">Primer Nombre:</span>
                     </div>
                     <input type="text" class="form-control" value="{{ $formulario->nombrecy }}" readonly>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Segundo Nombre:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->nombrecy2 }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Primer Apellido:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->apellidocy }}" readonly>
+                </div>
+            </div>
+        </div>
 
-            <div class="col-md-3">
+        <div class="row mt-2">
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text font-weight-bold">Segundo Apellido:</span>
+                    </div>
+                    <input type="text" class="form-control" value="{{ $formulario->apellidocy2 }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text font-weight-bold">Genero:</span>
@@ -173,15 +225,41 @@
         @foreach ($dependientes as $dependiente)
 
             <div class="row mt-2">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                          <span class="input-group-text font-weight-bold">{{ $cont++ }}. Nombre:</span>
+                          <span class="input-group-text font-weight-bold">{{ $cont++ }}. Primer Nombre:</span>
                         </div>
                         <input type="text" class="form-control" value="{{ $dependiente->nombre }}" readonly readonly>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text font-weight-bold">Segundo Nombre:</span>
+                        </div>
+                        <input type="text" class="form-control" value="{{ $dependiente->nombre2 }}" readonly readonly>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text font-weight-bold">Primer Apellido:</span>
+                        </div>
+                        <input type="text" class="form-control" value="{{ $dependiente->apellido }}" readonly readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text font-weight-bold">Primer Apellido:</span>
+                        </div>
+                        <input type="text" class="form-control" value="{{ $dependiente->apellido2 }}" readonly readonly>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text font-weight-bold">Genero:</span>
@@ -225,6 +303,7 @@
                 </div>
             </div>
 
+            <hr>
         @endforeach
 
     </div>
@@ -275,8 +354,7 @@
 
     <div class="container card py-3 mt-2">
         <div class="btn-group btn-block" role="group" aria-label="Basic example">
-            <a href="{{ route('formularios.index') }}" class="btn btn-success">Regresar</a>
-            <a href="{{ route('formularios.edit', $formulario) }}" class="btn btn-primary">Editar</a>
+            <a href="{{ route('formularios.show', $formulario) }}" class="btn btn-success">Regresar</a>
             <a href="{{ route('pdf.show', $formulario) }}" class="btn btn-warning" target="_blank">Descargar PDF</a>
         </div>
     </div>

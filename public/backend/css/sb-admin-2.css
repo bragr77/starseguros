@@ -10460,7 +10460,7 @@ a:focus {
 .dropdown .dropdown-menu .dropdown-header {
     font-weight: 800;
     font-size: 0.65rem;
-    color: #b7b9cc;
+    color: #000;
 }
 
 .dropdown.no-arrow .dropdown-toggle::after {
@@ -10809,7 +10809,7 @@ a:focus {
     text-align: center;
     padding: 0 1rem;
     font-weight: 800;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -10871,7 +10871,7 @@ a:focus {
         display: inline;
     }
     .sidebar .sidebar-heading {
-        text-align: left;
+        text-align: center;
     }
     .sidebar.toggled {
         overflow: visible;
@@ -10995,7 +10995,7 @@ a:focus {
 }
 
 .sidebar-dark .sidebar-heading {
-    color: rgba(255, 255, 255, 0.4);
+    color: #fff;
 }
 
 .sidebar-dark .nav-item .nav-link {
@@ -11114,7 +11114,7 @@ a:focus {
 }
 
 .card .card-header .dropdown .dropdown-menu {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .card .card-header[data-toggle="collapse"] {

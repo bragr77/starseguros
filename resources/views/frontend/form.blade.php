@@ -49,11 +49,26 @@
                 <hr>
 
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombre">Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombre">First Name:</label>
                         <input type="text" id="nombre" name="nombre" class="form-control" required>
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombre2">Second Name:</label>
+                        <input type="text" id="nombre2" name="nombre2" class="form-control" required>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellido">First Surname:</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellido2">Second Surname:</label>
+                        <input type="text" id="apellido2" name="apellido2" class="form-control" required>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="genero">Gender:</label>
                         <select type="text" id="genero" name="genero" class="form-control" required>
                             <option selected value="">select...</option>
@@ -129,9 +144,23 @@
                 <hr>
 
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombrecy">Spouse Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombrecy">First Name:</label>
                         <input type="text" id="nombrecy" name="nombrecy" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombrecy2">Second Name:</label>
+                        <input type="text" id="nombrecy2" name="nombrecy2" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidocy">First Surname:</label>
+                        <input type="text" id="apellidocy" name="apellidocy" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidocy2">Second Surname:</label>
+                        <input type="text" id="apellidocy2" name="apellidocy2" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0">
                         <label for="generocony">Gender:</label>
@@ -214,11 +243,25 @@
 
                 {{--  dependiente 1  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred1">1. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred1">1. First Name:</label>
                         <input type="text" id="nombred1" name="nombred1" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred12">Second Name:</label>
+                        <input type="text" id="nombred12" name="nombred12" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod1">First Surname:</label>
+                        <input type="text" id="apellidod1" name="apellidod1" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod12">Second Surname:</label>
+                        <input type="text" id="apellidod12" name="apellidod12" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod1">Gender:</label>
                         <select type="text" id="generod1" name="generod1" class="form-control">
                              <option selected value="">Select...</option>
@@ -273,11 +316,25 @@
                 <hr>
                 {{--  dependiente 2  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred2">2. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred2">2. First Name:</label>
                         <input type="text" id="nombred2" name="nombred2" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred22">Second Name:</label>
+                        <input type="text" id="nombred22" name="nombred22" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod2">First Surname:</label>
+                        <input type="text" id="apellidod2" name="apellidod2" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod22">Second Surname:</label>
+                        <input type="text" id="apellidod22" name="apellidod22" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod2">Gender:</label>
                         <select type="text" id="generod2" name="generod2" class="form-control">
                              <option selected value="">Select...</option>
@@ -332,11 +389,25 @@
                 <hr>
                 {{--  dependiente 3  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred3">3. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred3">3. First Name:</label>
                         <input type="text" id="nombred3" name="nombred3" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred32">Second Name:</label>
+                        <input type="text" id="nombred32" name="nombred32" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod3">First Surname:</label>
+                        <input type="text" id="apellidod3" name="apellidod3" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod32">Second Surname:</label>
+                        <input type="text" id="apellidod32" name="apellidod32" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod3">Gender:</label>
                         <select type="text" id="generod3" name="generod3" class="form-control">
                              <option selected value="">Select...</option>
@@ -391,11 +462,25 @@
                 <hr>
                 {{--  dependiente 4  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred4">4. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred4">4. First Name:</label>
                         <input type="text" id="nombred4" name="nombred4" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred42">Second Name:</label>
+                        <input type="text" id="nombred42" name="nombred42" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod4">First Surname:</label>
+                        <input type="text" id="apellidod4" name="apellidod4" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod42">Second Surname:</label>
+                        <input type="text" id="apellidod42" name="apellidod42" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod4">Gender:</label>
                         <select type="text" id="generod4" name="generod4" class="form-control">
                              <option selected value="">Select...</option>
@@ -450,11 +535,25 @@
                 <hr>
                 {{--  dependiente 5  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred5">5. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred5">5. First Name:</label>
                         <input type="text" id="nombred5" name="nombred5" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred52">Second Name:</label>
+                        <input type="text" id="nombred52" name="nombred52" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod5">First Surname:</label>
+                        <input type="text" id="apellidod5" name="apellidod5" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod52">Second Surname:</label>
+                        <input type="text" id="apellidod52" name="apellidod52" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod5">Gender:</label>
                         <select type="text" id="generod5" name="generod5" class="form-control">
                              <option selected value="">Select...</option>
@@ -509,11 +608,25 @@
                 <hr>
                 {{--  dependiente 6  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred6">6. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred6">6. First Name:</label>
                         <input type="text" id="nombred6" name="nombred6" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred62">Second Name:</label>
+                        <input type="text" id="nombred62" name="nombred62" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod6">First Surname:</label>
+                        <input type="text" id="apellidod6" name="apellidod6" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod62">Second Surname:</label>
+                        <input type="text" id="apellidod62" name="apellidod62" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod6">Gender:</label>
                         <select type="text" id="generod6" name="generod6" class="form-control">
                              <option selected value="">Select...</option>
@@ -568,11 +681,25 @@
                 <hr>
                 {{--  dependiente 7  --}}
                 <div class="row form-group">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label class="text-black" for="nombred7">7. Name:</label>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred7">7. First Name:</label>
                         <input type="text" id="nombred7" name="nombred7" class="form-control">
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="nombred72">Second Name:</label>
+                        <input type="text" id="nombred72" name="nombred72" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod7">First Surname:</label>
+                        <input type="text" id="apellidod7" name="apellidod7" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <label class="text-black" for="apellidod72">Second Surname:</label>
+                        <input type="text" id="apellidod72" name="apellidod72" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
                         <label for="generod7">Gender:</label>
                         <select type="text" id="generod7" name="generod7" class="form-control">
                              <option selected value="">select...</option>

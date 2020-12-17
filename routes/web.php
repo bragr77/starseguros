@@ -40,6 +40,20 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::get('/planilla/{id}', 'PlanillaController@planilla' )->name('planilla');
 
+    Route::resource('perfil', 'PerfilController');
+
+    Route::resource('dependiente', 'DependienteController');
+
+    Route::resource('dependientes', 'DependientesController');
+
+    Route::resource('editdatos', 'EditdatosController');
+
+    Route::resource('editconyugue', 'EditconyugueController');
+
+    Route::resource('editfinanzas', 'EditfinanzasController');
+
+    Route::resource('conyugues', 'ConyugueController');
+
 });
 
 Route::get('/msjenviado', function () {

@@ -60,23 +60,36 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Registros
+                Clientes
             </div>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('formularios.index') }}">
+                    <i class="fas fa-users"></i>
+                    <span>Panel Clientes</span>
+                <a>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#menuform" aria-expanded="true" aria-controls="menuform">
                     <i class="far fa-address-card"></i>
-                    <span>Formularios</span>
+                    <span>Acciones</span>
                 </a>
                 <div id="menuform" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ route('formularios.index') }}">
-                            <i class="fas fa-search"></i>
-                            <span>Ver Formularios</span>
-                        </a>
                         <a class="collapse-item" href="{{ route('formularios.create') }}">
                             <i class="fas fa-user-edit"></i>
                             <span>Registrar Cliente</span>
+                        </a>
+
+                        <a class="collapse-item" href="{{ route('conyugues.index') }}">
+                            <i class="fas fa-search"></i>
+                            <span>Conyugues</span>
+                        </a>
+
+                        <a class="collapse-item" href="{{ route('dependientes.index') }}">
+                            <i class="fas fa-search"></i>
+                            <span>Dependientes</span>
                         </a>
                     </div>
                 </div>
@@ -258,7 +271,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#emailmasivos, #mensajes, #formularios, #contactos').DataTable({
+            $('#formularios').DataTable({
                 language: {
                     "sProcessing":     "Procesando...",
                     "sLengthMenu":     'Mostrar <select>'+
@@ -297,14 +310,62 @@
                         "copy": "Copiar",
                         "colvis": "Visibilidad"
                     }
-                }
+                },
+                "order": [[0, "desc"]]
             });
         });
     </script>
 
     <script>
         $(document).ready(function() {
-            $('#contactoshome, #mensajeshome').DataTable({
+            $('#emailmasivos, #mensajes, #contactos').DataTable({
+                language: {
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     'Mostrar <select>'+
+                                       '<option value="10">10</option>'+
+                                       '<option value="20">20</option>'+
+                                       '<option value="30">30</option>'+
+                                       '<option value="40">40</option>'+
+                                       '<option value="50">50</option>'+
+                                       '<option value="100">100</option>'+
+                                       '<option value="150">150</option>'+
+                                       '<option value="200">200</option>'+
+                                       '<option value="500">500</option>'+
+                                       '<option value="-1">Todos</option>'+
+                                       '</select> Registros',
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     "Último",
+                        "sNext":     "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    },
+                    "buttons": {
+                        "copy": "Copiar",
+                        "colvis": "Visibilidad"
+                    }
+                },
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#contactoshome, #mensajeshome, #dependientes, #conyugues').DataTable({
                 language: {
                     "sProcessing":     "Procesando...",
                     "sLengthMenu":     'Mostrar <select>'+

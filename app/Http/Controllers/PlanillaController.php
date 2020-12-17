@@ -9,6 +9,8 @@ class PlanillaController extends Controller
 {
     public function planilla($id)
     {
+        $cont = 1;
+
         $formulario = Formulario::find($id);
 
         $formulario->visto = 1;
@@ -18,8 +20,9 @@ class PlanillaController extends Controller
         $dependientes = $formulario->dependientes()->get();
 
         return view('backend.formularios.planilla', [
-            'formulario' => $formulario,
-            'dependientes' => $dependientes,
+            'formulario'    => $formulario,
+            'dependientes'  => $dependientes,
+            'cont'          => $cont,
         ]);
     }
 }

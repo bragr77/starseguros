@@ -41,6 +41,9 @@ class FormfrontendController extends Controller
         $formulario = new Formulario();
 
         $formulario->nombre = $request->input('nombre');
+        $formulario->nombre2 = $request->input('nombre2');
+        $formulario->apellido = $request->input('apellido');
+        $formulario->apellido2 = $request->input('apellido2');
         $formulario->genero = $request->input('genero');
         $formulario->fechan = $request->input('fechan');
         $formulario->direccion = $request->input('direccion');
@@ -53,6 +56,9 @@ class FormfrontendController extends Controller
         $formulario->estadocivil = $request->input('estadocivil');
 
         $formulario->nombrecy = $request->input('nombrecy');
+        $formulario->nombrecy2 = $request->input('nombrecy2');
+        $formulario->apellidocy = $request->input('apellidocy');
+        $formulario->apellidocy2 = $request->input('apellidocy2');
         $formulario->generocy = $request->input('generocy');
         $formulario->fechancy = $request->input('fechancy');
         $formulario->estatuscy = $request->input('estatuscy');
@@ -66,6 +72,8 @@ class FormfrontendController extends Controller
 
         $formulario->visto = 0;
 
+        $formulario->perfil = 0;
+
         $formulario->save();
 
         //salvar los datos de la tabla relacionada
@@ -73,6 +81,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred1') != null) {
             $d1 = new Dependiente([
                 'nombre' => $request->input('nombred1'),
+                'nombre2' => $request->input('nombred12'),
+                'apellido' => $request->input('apellidod1'),
+                'apellido2' => $request->input('apellidod12'),
                 'genero' => $request->input('generod1'),
                 'fechan' => $request->input('fechand1'),
                 'relacion' => $request->input('relaciond1'),
@@ -86,6 +97,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred2') != null) {
             $d2 = new Dependiente([
                 'nombre' => $request->input('nombred2'),
+                'nombre2' => $request->input('nombred22'),
+                'apellido' => $request->input('apellidod2'),
+                'apellido2' => $request->input('apellidod22'),
                 'genero' => $request->input('generod2'),
                 'fechan' => $request->input('fechand2'),
                 'relacion' => $request->input('relaciond2'),
@@ -99,6 +113,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred3') != null) {
             $d3 = new Dependiente([
                 'nombre' => $request->input('nombred3'),
+                'nombre2' => $request->input('nombred32'),
+                'apellido' => $request->input('apellidod3'),
+                'apellido2' => $request->input('apellidod32'),
                 'genero' => $request->input('generod3'),
                 'fechan' => $request->input('fechand3'),
                 'relacion' => $request->input('relaciond3'),
@@ -112,6 +129,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred4') != null) {
             $d4 = new Dependiente([
                 'nombre' => $request->input('nombred4'),
+                'nombre2' => $request->input('nombred42'),
+                'apellido' => $request->input('apellidod4'),
+                'apellido2' => $request->input('apellidod42'),
                 'genero' => $request->input('generod4'),
                 'fechan' => $request->input('fechand4'),
                 'relacion' => $request->input('relaciond4'),
@@ -125,6 +145,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred5') != null) {
             $d5 = new Dependiente([
                 'nombre' => $request->input('nombred5'),
+                'nombre2' => $request->input('nombred52'),
+                'apellido' => $request->input('apellidod5'),
+                'apellido2' => $request->input('apellidod52'),
                 'genero' => $request->input('generod5'),
                 'fechan' => $request->input('fechand5'),
                 'relacion' => $request->input('relaciond5'),
@@ -138,6 +161,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred6') != null) {
             $d6 = new Dependiente([
                 'nombre' => $request->input('nombred6'),
+                'nombre2' => $request->input('nombred62'),
+                'apellido' => $request->input('apellidod6'),
+                'apellido2' => $request->input('apellidod62'),
                 'genero' => $request->input('generod6'),
                 'fechan' => $request->input('fechand6'),
                 'relacion' => $request->input('relaciond6'),
@@ -151,6 +177,9 @@ class FormfrontendController extends Controller
         if ($request->input('nombred7') != null) {
             $d7 = new Dependiente([
                 'nombre' => $request->input('nombred7'),
+                'nombre2' => $request->input('nombred72'),
+                'apellido' => $request->input('apellidod7'),
+                'apellido2' => $request->input('apellidod72'),
                 'genero' => $request->input('generod7'),
                 'fechan' => $request->input('fechand7'),
                 'relacion' => $request->input('relaciond7'),

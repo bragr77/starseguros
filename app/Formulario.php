@@ -12,4 +12,8 @@ class Formulario extends Model
     public function dependientes(){
         return $this->hasMany(Dependiente::class);
     }
+
+    public function profile(){
+        return $this->hasOne(Profile::class);
+    }
 }

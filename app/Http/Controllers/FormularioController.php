@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Contacto;
 use App\Dependiente;
 use App\Formulario;
+use App\Seguro;
 use Illuminate\Http\Request;
 
 class FormularioController extends Controller
@@ -48,6 +49,9 @@ class FormularioController extends Controller
         $formulario = new Formulario();
 
         $formulario->nombre = $request->input('nombre');
+        $formulario->nombre2 = $request->input('nombre2');
+        $formulario->apellido = $request->input('apellido');
+        $formulario->apellido2 = $request->input('apellido2');
         $formulario->genero = $request->input('genero');
         $formulario->fechan = $request->input('fechan');
         $formulario->direccion = $request->input('direccion');
@@ -60,10 +64,14 @@ class FormularioController extends Controller
         $formulario->estadocivil = $request->input('estadocivil');
 
         $formulario->nombrecy = $request->input('nombrecy');
+        $formulario->nombrecy2 = $request->input('nombrecy2');
+        $formulario->apellidocy = $request->input('apellidocy');
+        $formulario->apellidocy2 = $request->input('apellidocy2');
         $formulario->generocy = $request->input('generocy');
         $formulario->fechancy = $request->input('fechancy');
         $formulario->estatuscy = $request->input('estatuscy');
         $formulario->ssncy = $request->input('ssncy');
+
         $formulario->ingreso = $request->input('ingreso');
         $formulario->banco = $request->input('banco');
         $formulario->ruta = $request->input('ruta');
@@ -73,6 +81,8 @@ class FormularioController extends Controller
 
         $formulario->visto = 0;
 
+        $formulario->perfil = 0;
+
         $formulario->save();
 
         //salvar los datos de la tabla relacionada
@@ -80,6 +90,9 @@ class FormularioController extends Controller
         if ($request->input('nombred1') != null) {
             $d1 = new Dependiente([
                 'nombre' => $request->input('nombred1'),
+                'nombre2' => $request->input('nombred12'),
+                'apellido' => $request->input('apellidod1'),
+                'apellido2' => $request->input('apellidod12'),
                 'genero' => $request->input('generod1'),
                 'fechan' => $request->input('fechand1'),
                 'relacion' => $request->input('relaciond1'),
@@ -93,6 +106,9 @@ class FormularioController extends Controller
         if ($request->input('nombred2') != null) {
             $d2 = new Dependiente([
                 'nombre' => $request->input('nombred2'),
+                'nombre2' => $request->input('nombred22'),
+                'apellido' => $request->input('apellidod2'),
+                'apellido2' => $request->input('apellidod22'),
                 'genero' => $request->input('generod2'),
                 'fechan' => $request->input('fechand2'),
                 'relacion' => $request->input('relaciond2'),
@@ -106,6 +122,9 @@ class FormularioController extends Controller
         if ($request->input('nombred3') != null) {
             $d3 = new Dependiente([
                 'nombre' => $request->input('nombred3'),
+                'nombre2' => $request->input('nombred32'),
+                'apellido' => $request->input('apellidod3'),
+                'apellido2' => $request->input('apellidod32'),
                 'genero' => $request->input('generod3'),
                 'fechan' => $request->input('fechand3'),
                 'relacion' => $request->input('relaciond3'),
@@ -119,6 +138,9 @@ class FormularioController extends Controller
         if ($request->input('nombred4') != null) {
             $d4 = new Dependiente([
                 'nombre' => $request->input('nombred4'),
+                'nombre2' => $request->input('nombred42'),
+                'apellido' => $request->input('apellidod4'),
+                'apellido2' => $request->input('apellidod42'),
                 'genero' => $request->input('generod4'),
                 'fechan' => $request->input('fechand4'),
                 'relacion' => $request->input('relaciond4'),
@@ -132,6 +154,9 @@ class FormularioController extends Controller
         if ($request->input('nombred5') != null) {
             $d5 = new Dependiente([
                 'nombre' => $request->input('nombred5'),
+                'nombre2' => $request->input('nombred52'),
+                'apellido' => $request->input('apellidod5'),
+                'apellido2' => $request->input('apellidod52'),
                 'genero' => $request->input('generod5'),
                 'fechan' => $request->input('fechand5'),
                 'relacion' => $request->input('relaciond5'),
@@ -145,6 +170,9 @@ class FormularioController extends Controller
         if ($request->input('nombred6') != null) {
             $d6 = new Dependiente([
                 'nombre' => $request->input('nombred6'),
+                'nombre2' => $request->input('nombred62'),
+                'apellido' => $request->input('apellidod6'),
+                'apellido2' => $request->input('apellidod62'),
                 'genero' => $request->input('generod6'),
                 'fechan' => $request->input('fechand6'),
                 'relacion' => $request->input('relaciond6'),
@@ -158,6 +186,9 @@ class FormularioController extends Controller
         if ($request->input('nombred7') != null) {
             $d7 = new Dependiente([
                 'nombre' => $request->input('nombred7'),
+                'nombre2' => $request->input('nombred72'),
+                'apellido' => $request->input('apellidod7'),
+                'apellido2' => $request->input('apellidod72'),
                 'genero' => $request->input('generod7'),
                 'fechan' => $request->input('fechand7'),
                 'relacion' => $request->input('relaciond7'),
@@ -198,10 +229,13 @@ class FormularioController extends Controller
 
         $dependientes = $formulario->dependientes()->get();
 
+        $seguros = Seguro::all();
+
         return view('backend.formularios.show', [
-            'formulario' => $formulario,
-            'dependientes' => $dependientes,
-            'cont' => $cont,
+            'formulario'    => $formulario,
+            'dependientes'  => $dependientes,
+            'seguros'       => $seguros,
+            'cont'          => $cont,
         ]);
     }
 
@@ -229,82 +263,7 @@ class FormularioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $formulario = Formulario::find($id);
-
-        $formulario->nombre = $request->input('nombre');
-        $formulario->genero = $request->input('genero');
-        $formulario->fechan = $request->input('fechan');
-        $formulario->direccion = $request->input('direccion');
-        $formulario->ciudad = $request->input('ciudad');
-        $formulario->postal = $request->input('postal');
-        $formulario->telefono = $request->input('telefono');
-        $formulario->email = $request->input('email');
-        $formulario->estatus = $request->input('estatus');
-        $formulario->ssn = $request->input('ssn');
-        $formulario->estadocivil = $request->input('estadocivil');
-
-        $formulario->nombrecy = $request->input('nombrecy');
-        $formulario->generocy = $request->input('generocy');
-        $formulario->fechancy = $request->input('fechancy');
-        $formulario->estatuscy = $request->input('estatuscy');
-        $formulario->ssncy = $request->input('ssncy');
-        $formulario->ingreso = $request->input('ingreso');
-        $formulario->banco = $request->input('banco');
-        $formulario->ruta = $request->input('ruta');
-        $formulario->cuenta = $request->input('cuenta');
-
-        $formulario->nombred1 = $request->input('nombred1');
-        $formulario->generod1 = $request->input('generod1');
-        $formulario->fechand1 = $request->input('fechand1');
-        $formulario->relaciond1 = $request->input('relaciond1');
-        $formulario->estatusd1 = $request->input('estatusd1');
-        $formulario->ssnd1 = $request->input('ssnd1');
-
-        $formulario->nombred2 = $request->input('nombred2');
-        $formulario->generod2 = $request->input('generod2');
-        $formulario->fechand2 = $request->input('fechand2');
-        $formulario->relaciond2 = $request->input('relaciond2');
-        $formulario->estatusd2 = $request->input('estatusd2');
-        $formulario->ssnd2 = $request->input('ssnd2');
-
-        $formulario->nombred3 = $request->input('nombred3');
-        $formulario->generod3 = $request->input('generod3');
-        $formulario->fechand3 = $request->input('fechand3');
-        $formulario->relaciond3 = $request->input('relaciond3');
-        $formulario->estatusd3 = $request->input('estatusd3');
-        $formulario->ssnd3 = $request->input('ssnd3');
-
-        $formulario->nombred4 = $request->input('nombred4');
-        $formulario->generod4 = $request->input('generod4');
-        $formulario->fechand4 = $request->input('fechand4');
-        $formulario->relaciond4 = $request->input('relaciond4');
-        $formulario->estatusd4 = $request->input('estatusd4');
-        $formulario->ssnd4 = $request->input('ssnd4');
-
-        $formulario->nombred5 = $request->input('nombred5');
-        $formulario->generod5 = $request->input('generod5');
-        $formulario->fechand5 = $request->input('fechand5');
-        $formulario->relaciond5 = $request->input('relaciond5');
-        $formulario->estatusd5 = $request->input('estatusd5');
-        $formulario->ssnd5 = $request->input('ssnd5');
-
-        $formulario->nombred6 = $request->input('nombred6');
-        $formulario->generod6 = $request->input('generod6');
-        $formulario->fechand6 = $request->input('fechand6');
-        $formulario->relaciond6 = $request->input('relaciond6');
-        $formulario->estatusd6 = $request->input('estatusd6');
-        $formulario->ssnd6 = $request->input('ssnd6');
-
-        $formulario->nombred7 = $request->input('nombred7');
-        $formulario->generod7 = $request->input('generod7');
-        $formulario->fechand7 = $request->input('fechand7');
-        $formulario->relaciond7 = $request->input('relaciond7');
-        $formulario->estatusd7 = $request->input('estatusd7');
-        $formulario->ssnd7 = $request->input('ssnd7');
-
-        $formulario->save();
-
-        return redirect()->route('formularios.index');
+        //
     }
 
     /**

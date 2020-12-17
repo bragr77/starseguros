@@ -16,6 +16,9 @@ class CreateFormulariosTable extends Migration
         Schema::create('formularios', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('nombre2');
+            $table->string('apellido');
+            $table->string('apellido2');
             $table->string('genero');
             $table->string('fechan');
             $table->string('direccion');
@@ -28,6 +31,9 @@ class CreateFormulariosTable extends Migration
             $table->string('estadocivil');
 
             $table->string('nombrecy')->nullable();
+            $table->string('nombrecy2')->nullable();
+            $table->string('apellidocy')->nullable();
+            $table->string('apellidocy2')->nullable();
             $table->string('generocy')->nullable();
             $table->string('fechancy')->nullable();
             $table->string('estatuscy')->nullable();
@@ -37,9 +43,11 @@ class CreateFormulariosTable extends Migration
             $table->string('banco');
             $table->string('ruta');
             $table->string('cuenta');
+
             $table->string('dependientes');
 
             $table->integer('visto');
+            $table->integer('perfil');
 
             $table->timestamps();
         });

@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Dependiente extends Model
+class Profile extends Model
 {
-    protected $table = 'dependientes';
+    protected $table = 'profiles';
 
     protected $fillable = [
-        'nombre', 'nombre2', 'apellido', 'apellido2', 'genero', 'fechan', 'relacion', 'estatus', 'ssn',
+        'tiposeguro', 'comision', 'observaciones'
     ];
 
     public function formulario(){

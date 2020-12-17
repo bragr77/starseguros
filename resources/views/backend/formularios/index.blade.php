@@ -4,43 +4,45 @@
 <!-- Animated -->
 <div class="animated fadeIn">
 
-    <h2 class="mb-5 font-weight-bold">Formularios</h2>
+    <h2 class="mb-5 font-weight-bold">Clientes</h2>
 
-    <table id="formularios" class="table table-hover">
-        <thead>
-            <tr>
-                <th>N°</th>
-                <th>Nombre</th>
-                <th>Telefono</th>
-                <th>Email</th>
-                <th>Fecha de Registro</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($formularios as $formulario)
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive-lg">
+                <table id="formularios" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Nombres y Apellidos</th>
+                            <th scope="col">Fecha de Registro</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($formularios as $formulario)
 
-            <tr class="@if ($formulario->visto == 0) ItemNuevo @else @endif">
-                <th>{{ $cont++ }}</th>
-                <td>{{$formulario->nombre }}</td>
-                <td>{{$formulario->telefono }}</td>
-                <td>{{$formulario->email }}</td>
-                <td>{{$formulario->created_at->diffForHumans() }}</td>
-                <td>
-                    <div class="row">
-                        <a href="{{ route('formularios.show', $formulario) }}" class="mr-1 btn btn-success btn-sm">Ver Formulario</a>
-                        <form action="{{ route('formularios.destroy', $formulario) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="ml-1 mr-1 btn btn-danger btn-sm">Eliminar</button>
-                        </form>
-                        <a href="{{ route('pdf.show', $formulario) }}" class="ml-1 btn btn-warning btn-sm" target="_blank">Ver PDF</a>
-                    </div>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-      </table>
+                        <tr class="@if ($formulario->visto == 0) ItemNuevo @else @endif">
+                            <th scope="row">{{ $cont++ }}</th>
+                            <td>{{$formulario->nombre }} {{$formulario->nombre2 }} {{$formulario->apellido }} {{$formulario->apellido2 }}</td>
+                            <td>{{$formulario->created_at->diffForHumans() }}</td>
+                            <td>
+                                <div class="row text-center">
+                                    <a href="{{ route('formularios.show', $formulario) }}" class="mr-1 btn btn-success btn-sm">Ver</a>
+                                    <form action="{{ route('formularios.destroy', $formulario) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 
 </div>
 <!-- .animated -->
