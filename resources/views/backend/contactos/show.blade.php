@@ -5,7 +5,7 @@
 <div class="animated fadeIn">
 
     <div class="container col-lg-10 card py-3 mt-5">
-        <h2 class="font-weight-bold text-center">Contacto: {{ $contacto->nombre }}</h2>
+        <h2 class="font-weight-bold text-center mt-3">Contacto: {{ $contacto->nombre }}</h2>
         <div class="row mt-2">
             <div class="col-md-5">
                 <div class="input-group mb-6">

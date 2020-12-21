@@ -186,10 +186,10 @@
                         </button>
                     @else
                         <div class="col-md-12">
-                            <p class="text-dark"><strong>Seguro Contrado: </strong>{{ $formulario->profile->tiposeguro }}</p>
+                            <p class="text-dark"><strong>Compañia de Seguro: </strong>{{ $formulario->profile->tiposeguro }}</p>
                         </div>
                         <div class="col-md-12">
-                            <p class="text-dark"><strong>Comisión: </strong>{{ $formulario->profile->comision }}</p>
+                            <p class="text-dark"><strong>Precio del Plan $: </strong>{{ $formulario->profile->comision }}</p>
                         </div>
                         <div class="col-md-12">
                             <p class="text-dark"><strong>Observaciones:</p>
@@ -285,7 +285,7 @@
                     <div class="row form-group">
                         <input type="hidden" id="id" name="id" class="form-control" value="{{ $formulario->id }}" >
                         <div class="col-md-6 mb-3 mb-md-0">
-                            <label class="text-black" for="seguro">Tipo de Seguro:</label>
+                            <label class="text-black" for="seguro">Compañia de Seguro:</label>
                             <select type="text" id="seguro" name="seguro" class="form-control">
                                 <option selected value="">Selecciona...</option>
                                 @foreach ($seguros as $seguro)
@@ -294,13 +294,13 @@
                             </select>
                         </div>
                         <div class="col-md-6 mb-3 mb-md-0">
-                            <label class="text-black" for="comision">Comisión:</label>
+                            <label class="text-black" for="comision">Precio del Plan $:</label>
                             <input type="text" id="comision" name="comision" class="form-control" >
                         </div>
                     </div>
                     <div class="row form-group ">
                         <div class="col-md-12 ">
-                            <label class="text-black " for="observaciones">Mensaje</label>
+                            <label class="text-black " for="observaciones">Observaciones:</label>
                             <textarea name="observaciones" id="observaciones" cols="30 " rows="4" class="form-control " minlength="3"></textarea >
                         </div>
                     </div>

@@ -134,7 +134,20 @@
                 </div>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Compañias de Seguros
+            </div>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('seguros.index') }}">
+                    <i class="fas fa-medkit"></i>
+                    <span>Ver Compañias</span>
+                </a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

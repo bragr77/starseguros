@@ -54,6 +54,8 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('conyugues', 'ConyugueController');
 
+    Route::resource('seguros', 'SeguroController');
+
 });
 
 Route::get('/msjenviado', function () {
