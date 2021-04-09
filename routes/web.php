@@ -56,6 +56,10 @@ Route::group(['prefix' => 'panel'], function () {
 
     Route::resource('seguros', 'SeguroController');
 
+    Route::get('/reportclientes', 'ReporteController@reportclientes' )->name('reportclientes');
+
+    Route::get('/reportclientesydependientes', 'ReporteController@reportclientesydependientes' )->name('reportclientesydependientes');
+
 });
 
 Route::get('/msjenviado', function () {
