@@ -17,6 +17,8 @@
                 <th scope="col">N°</th>
                 <th scope="col">Nombres y Apellidos</th>
                 <th scope="col">Fecha de Registro</th>
+                <th scope="col">Estado Civil</th>
+                <th scope="col">Dependientes</th>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +28,8 @@
                 <th scope="row">{{ $contr1++ }}</th>
                 <td>{{$formulario->nombre }} {{$formulario->nombre2 }} {{$formulario->apellido }} {{$formulario->apellido2 }}</td>
                 <td>{{$formulario->created_at->format('d / m / Y') }}</td>
+                <td>{{$formulario->estadocivil }}</td>
+                <td>{{$formulario->dependientes }}</td>
             </tr>
             @endforeach
         </tbody>

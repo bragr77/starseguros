@@ -9,34 +9,95 @@ use Illuminate\Http\Request;
 
 class ReporteController extends Controller
 {
-    public function reportclientes()
-    {
-        $contr1 = 1;
-
-        $formularios = Formulario::orderBy('created_at', 'desc')->get();
-
-        $pdf = PDF::loadView('backend.pdfs.reportclientes' , [
-            'formularios'    => $formularios,
-            'contr1'        => $contr1,
-        ]);
-
-        return $pdf->stream('reporteclientes.pdf');
-    }
-
-    public function reportclientesydependientes()
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
         $contr2 = 1;
 
-        $formularios = Formulario::orderBy('created_at', 'desc')->get();
+        $formularios = Formulario::all();
 
-        $dependientes = Dependiente::all();
+        return view('backend.reportes.clientescondependientes.index',[
+            'formularios' => $formularios,
+            'contr2' => $contr2,
+        ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $formulario = Formulario::find($id);
+
+        $dependientes = $formulario->dependientes()->get();
 
         $pdf = PDF::loadView('backend.pdfs.reportclientesydependientes' , [
-            'formularios'   => $formularios,
+            'formulario'   => $formulario,
             'dependientes'  =>$dependientes,
-            'contr2'        => $contr2,
         ]);
 
         return $pdf->stream('reporteclientesydependientes.pdf');
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

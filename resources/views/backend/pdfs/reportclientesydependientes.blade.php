@@ -19,17 +19,14 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th scope="col">N°</th>
                 <th scope="col">Nombres y Apellidos</th>
                 <th scope="col">Fecha de Registro</th>
             </tr>
         </thead>
 
         <tbody>
-            @foreach ($formularios as $formulario)
 
-                <tr class="ItemNuevo">
-                    <th scope="row">{{ $contr2++ }}</th>
+                <tr>
                     <td>{{$formulario->nombre }} {{$formulario->nombre2 }} {{$formulario->apellido }} {{$formulario->apellido2 }}</td>
                     <td>{{$formulario->created_at->format('d / m / Y') }}</td>
                 </tr>
@@ -42,20 +39,17 @@
                     </tr>
                 @endif
 
-
                 @foreach ($dependientes as $dependiente)
 
-                    @if ($dependiente->formulario_id === $formulario->id)
                         <tr>
                             <th scope="row"></th>
                             <td>{{$dependiente->nombre }} {{$dependiente->nombre2 }} {{$dependiente->apellido }} {{$dependiente->apellido2 }}</td>
                             <td>{{$dependiente->relacion }}</td>
                         </tr>
-                    @endif
 
                 @endforeach
 
-            @endforeach
+
         </tbody>
     </table>
 

@@ -160,14 +160,14 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ route('reportclientes') }}" target="__blank">
                     <i class="fas fa-address-book"></i>
-                    <span>Clientes</span>
+                    <span>Todos los Clientes</span>
                 </a>
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="{{ route('reportclientesydependientes') }}" target="__blank">
+                <a class="nav-link" href="{{ route('reportes.index') }}">
                     <i class="far fa-address-book"></i>
-                    <span>Clientes y Dependientes</span>
+                    <span>Clientes con Dependientes</span>
                 </a>
             </li>
 
