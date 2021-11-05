@@ -49,15 +49,18 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="{{ route('english') }}">
-                        Stars<span>Seguros</span>
+                    <a class="navbar-brand" href="{{ route('index') }}">
+                        <img src="img/logo.png" style="margin-top: -20px" alt="">
                     </a>
                     <p>Call us now<b>+1 (475) 266-1141</b></p>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="english.html">Home</a>
+                            <a href="{{ route('english') }}">Home</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros">Abouts</a>
                         </li>
                         <li>
                             <a href="#productos">Products</a>
@@ -86,6 +89,9 @@
     <div id="page-content">
         <section class="flexslider">
             <ul class="slides">
+                <li>
+                    <img src="img/sliderp.jpg" />
+                </li>
                 <li>
                     <img src="img/slider1.jpg" />
                     <div class="slide-info">
@@ -154,10 +160,13 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <img src="img/sliderp2.jpg" />
+                </li>
             </ul>
         </section>
-        <div class="container" style="margin-top: 20px;">
-            <div class="row">
+        <section class="container" id="nosotros">
+            <div class="row" style="margin-bottom: 100px; margin-top: 100px">
                 <div class="col-sm-5 col-md-4 col-lg-4">
                     <div>
                         <div class="container" style="margin-top: 50px;">
@@ -167,7 +176,7 @@
                 </div>
                 <div class="col-sm-7 col-md-8 col-lg-8" style="padding-left: 40px;">
                     <div class="intro">
-                        <h2>Welcome to StarsSeguros</h2>
+                        <h2>Welcome</h2>
                         <hr>
                         <p class="text-justify">Our main commitment is "to make it easy for you". We understand how confusing the insurance issue can be, that is why at stars Seguros we handle what are the questions to ask, to establish which is the policy that fits the solution
                             of your needs.</p>
@@ -177,14 +186,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="productos">
-            <h1>&nbsp</h1>
-            <br>
-            <br>
-        </div>
-        <section class="product-tab">
-            <div class="container">
+        </section>
+
+        <section class="product-tab" id="productos">
+            <div class="container" style="margin-bottom: 100px; margin-top: 150px">
                 <div class="row">
                     <div id="parentVerticalTab">
                         <h2>Products</h2>
@@ -250,13 +255,8 @@
             </div>
         </section>
 
-        <div id="servicios">
-            <h1>&nbsp</h1>
-            <br>
-            <br>
-        </div>
-        <section class="services">
-            <h2 class="text-center">Services</h2>
+        <section class="services" id="servicios">
+            <h2 class="text-center" style="margin-bottom: 100px; margin-top: 100px">Servicios</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 services-dtl text-center">
@@ -287,70 +287,7 @@
                 </div> -->
                 </div>
         </section>
-        <!-- <section class="testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h2 class="text-center">Know what people says</h2>
-                        <div class="testimonial-tab">
-                            <div class="testimonials-tab-list">
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0);" data-tab="tab1"><img src="images/people-01.jpg" alt="Client" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" data-tab="tab2"><img src="images/people-02.jpg" alt="Client" /></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);" data-tab="tab3"><img src="images/people-03.jpg" alt="Client" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" data-tab="tab4"><img src="images/people-04.jpg" alt="Client" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" data-tab="tab5"><img src="images/people-05.jpg" alt="Client" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="testimonials-tab-content">
-                                <div class="clearfix testimonial-con" id="testimonial-tab1">
-                                    <h3>John<br /><span>Developer</span></h3>
-                                    <i class="fa fa-quote-left left-quote"></i>
-                                    <p class="col-sm-offset-1 col-sm-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ante purus, aliquet ut urna id, blandit lobortis nisl. Phasellus varius velit sed placerat euismod. Duis nisi massa, pretium at luctus.</p>
-                                    <i class="fa fa-quote-right right-quote"></i>
-                                </div>
-                                <div class="clearfix testimonial-con" id="testimonial-tab2">
-                                    <h3>Roger<br /><span>Baseball Player</span></h3>
-                                    <i class="fa fa-quote-left left-quote"></i>
-                                    <p class="col-sm-offset-1 col-sm-10">Cras vitae justo eu tellus maximus rutrum. Vestibulum nibh nibh, varius nec vehicula sed, finibus in tortor. Aliquam dictum, ligula vel euismod eleifend, libero est elementum</p>
-                                    <i class="fa fa-quote-right right-quote"></i>
-                                </div>
-                                <div class="clearfix testimonial-con" id="testimonial-tab3">
-                                    <h3>Victoria<br /><span>CEO</span></h3>
-                                    <i class="fa fa-quote-left left-quote"></i>
-                                    <p class="col-sm-offset-1 col-sm-10">Vivamus faucibus magna vitae purus blandit, rutrum aliquam turpis bibendum. Ut sit amet sapien dolor. Integer eget orci id leo consectetur iaculis ut vitae neque. Interdum et malesuada fames ac ante ipsum primis in
-                                        faucibus.
-                                    </p>
-                                    <i class="fa fa-quote-right right-quote"></i>
-                                </div>
-                                <div class="clearfix testimonial-con" id="testimonial-tab4">
-                                    <h3>Liang<br /><span>Photographer</span></h3>
-                                    <i class="fa fa-quote-left left-quote"></i>
-                                    <p class="col-sm-offset-1 col-sm-10">Pellentesque feugiat suscipit quam, quis dignissim massa. Suspendisse potenti. Donec porta tempus ipsum id rhoncus. Aliquam hendrerit leo erat, non accumsan massa venenatis vitae.</p>
-                                    <i class="fa fa-quote-right right-quote"></i>
-                                </div>
-                                <div class="clearfix testimonial-con" id="testimonial-tab5">
-                                    <h3>Adam<br /><span>Student</span></h3>
-                                    <i class="fa fa-quote-left left-quote"></i>
-                                    <p class="col-sm-offset-1 col-sm-10">Vivamus faucibus magna vitae purus blandit, rutrum aliquam turpis bibendum. Ut sit amet sapien dolor. Integer eget orci id leo consectetur iaculis ut vitae neque.</p>
-                                    <i class="fa fa-quote-right right-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+
 
         <section class="partners">
             <div class="container">
@@ -445,15 +382,9 @@
             </div>
         </section>
 
-        <div id="contacto" class="container">
-            <h1>&nbsp</h1>
-            <br>
-            <br>
-        </div>
-
-        <section class="contact-us">
+        <section class="contact-us" id="contacto">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-bottom: 100px; margin-top: 150px">
                     <div class="col-md-5">
                         <div class="contact-info">
                             <div class="contact-dtl">
@@ -518,7 +449,7 @@
             <div class="container">
                 <div class="row contact-sec">
                     <div class="col-md-5 col-lg-5 text-center">
-                        <h2>Stars<span>Seguros</span></h2>
+                        <img src="img/logofooter.png" alt="">
                         <div class="row text-center">
                             <div class="col-sm-12">
                                 <i class="fa fa-home fa-2x" style="color: #fff;"></i>
