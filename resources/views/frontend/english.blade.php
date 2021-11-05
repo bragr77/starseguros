@@ -170,7 +170,7 @@
                 <div class="col-sm-5 col-md-4 col-lg-4">
                     <div>
                         <div class="container" style="margin-top: 50px;">
-                            <img class="thumbnail" src="img/negrito2.jpg" alt="">
+                            <img class="thumbnail" src="img/negrito1.jpg" alt="">
                         </div>
                     </div>
                 </div>
